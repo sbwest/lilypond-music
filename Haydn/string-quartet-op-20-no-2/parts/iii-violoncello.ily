@@ -1,4 +1,4 @@
-\version "2.24.1"
+\version "2.24.2"
 celloThirdMov = \relative c' {
   \clef bass
   \section
@@ -58,7 +58,7 @@ celloThirdMov = \relative c' {
     | c( b c)
     | f,2.
     | g
-    | c,4 r r 
+    | c,4 r r \fine
   }
   \section
   \sectionLabel "Trio"

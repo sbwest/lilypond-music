@@ -1,10 +1,10 @@
-\version "2.24.1"
+\version "2.24.2"
 
 violinIIBreakI = {
   s8
   s1 * 46
   % 47
-  s2. s8 % \allowPageTurn
+  s2. s8 \break % \allowPageTurn
   s8
   % 48
   %\repeat unfold 57 { s1 \noPageBreak }

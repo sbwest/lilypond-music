@@ -1,8 +1,8 @@
-\version "2.24.1"
+\version "2.24.2"
 violaFourthMov = \relative c' {
   \clef alto
-  \section
-  \sectionLabel \markup { { \smallCaps "Fuga" } \italic "a quattro soggetti" }
+  % \section
+%   \sectionLabel \markup { { \smallCaps "Fuga" } \italic "a quattro soggetti" }
   | R2.
   | r4 r8 r8_\sempreSottoVoce f f ~
   | f g16 f  e8 ~ e d c 

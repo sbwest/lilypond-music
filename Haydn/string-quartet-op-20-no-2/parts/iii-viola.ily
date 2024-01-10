@@ -1,4 +1,4 @@
-\version "2.24.1"
+\version "2.24.2"
 violaThirdMov = \relative c' {
   \clef alto
   \section
@@ -58,7 +58,7 @@ violaThirdMov = \relative c' {
     | c( b c) 
     | f,2. ~ 
     | f
-    | e4 r r 
+    | e4 r r \fine
   }
   \section
   \sectionLabel "Trio"

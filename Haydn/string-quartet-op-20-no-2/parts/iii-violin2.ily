@@ -1,4 +1,4 @@
-\version "2.24.1"
+\version "2.24.2"
 violinIIThirdMov = \relative c'' {
   \clef treble
   \section
@@ -61,7 +61,7 @@ violinIIThirdMov = \relative c'' {
     | g
     | a
     | b
-    | c4 r r 
+    | c4 r r \fine
   }
   \section
   \sectionLabel "Trio"

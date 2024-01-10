@@ -1,4 +1,4 @@
-\version "2.24.1"
+\version "2.24.2"
 violinIThirdMov = \relative c'' {
   \clef treble
   \section
@@ -104,7 +104,7 @@ violinIThirdMov = \relative c'' {
     | \grace f8 e4_( d e) 
     | f2.
     | \grace e8 d4_( c d)
-    | c^\) r r 
+    | c^\) r r \fine
   }
   \section
   \sectionLabel "Trio" 

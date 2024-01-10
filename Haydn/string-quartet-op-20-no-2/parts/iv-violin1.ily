@@ -1,8 +1,8 @@
-\version "2.24.1"
+\version "2.24.2"
 violinIFourthMov = \relative c'' {
   \clef treble
-  \section
-  \sectionLabel \markup { { \smallCaps "Fuga" } \italic "a quattro soggetti" }
+  % \section
+  % \sectionLabel \markup { { \smallCaps "Fuga" } \italic "a quattro soggetti" }
   | r8_\sempreSottoVoce g g g'( fis) f-!
   | e c b a4 d8
   | g,4 c8 f,8 f' f 

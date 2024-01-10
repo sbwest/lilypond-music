@@ -1,8 +1,8 @@
-\version "2.24.1"
+\version "2.24.2"
 celloFourthMov = \relative c {
   \clef bass
-  \section
-  \sectionLabel \markup { { \smallCaps "Fuga" } \italic "a quattro soggetti" }
+  % \section
+%   \sectionLabel \markup { { \smallCaps "Fuga" } \italic "a quattro soggetti" }
   | R2. * 10
   % 11
   | r4 r8 r_\sempreSottoVoce c c 

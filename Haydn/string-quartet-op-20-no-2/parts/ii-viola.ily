@@ -1,10 +1,10 @@
-\version "2.24.1"
+\version "2.24.2"
 violaSecondMov = \relative c' {
   \clef alto
   \set baseMoment = #(ly:make-moment 1/8)
   \noTupletBracket
-  \section
-  \sectionLabel "Capriccio"
+  % \section
+  % \sectionLabel "Capriccio"
   | c4 ees b8-! g'-! r b
   | c8. bes!16 aes8.\trill g32 aes bes8 bes, r bes' 
   | g8.\trill f32 g aes8 aes,16. aes'32 f8.\trill ees32 f g8 g,16. f'32 
