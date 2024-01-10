@@ -16,7 +16,6 @@
 \include "./iv-violin2.ily"
 
 \include "./violin2_defs.ily"
-\include "./violin2_overrides.ily"
 
 \bookpart {
   \paper {

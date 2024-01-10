@@ -1,5 +1,7 @@
 \version "2.24.2"
 
+%%%%%
+% Breaks
 violinIIBreakI = {
   s8
   s1 * 46
@@ -85,3 +87,13 @@ violinIIBreakIII = {
 }
 
 violinIIBreakIV = { }
+
+%%%%%
+% Overrides
+violinIIOverridesI = { }
+
+violinIIOverridesII = { }
+
+violinIIOverridesIII = { }
+
+violinIIOverridesIV = { }

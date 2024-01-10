@@ -16,7 +16,6 @@
 \include "./iv-viola.ily"
 
 \include "./viola_defs.ily"
-\include "./viola_overrides.ily"
 
 \bookpart {
   \bookOutputName "Haydn - String Quartet Op. 20, No. 2 - Viola Part"

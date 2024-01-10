@@ -16,7 +16,6 @@
 \include "./iv-violoncello.ily"
 
 \include "./violoncello_defs.ily"
-\include "./violoncello_overrides.ily"
 
 \bookpart {
   \bookOutputName "Haydn - String Quartet Op. 20, No. 2 - Violoncello Part"

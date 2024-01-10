@@ -25,7 +25,6 @@
 \include "./iv-violin1.ily"
 
 \include "./violin1_defs.ily"
-\include "./violin1_overrides.ily"
 
 \bookpart { 
   \bookOutputName "Haydn - String Quartet Op. 20, No. 2 - Violin 1 Part"

@@ -1,5 +1,7 @@
 \version "2.24.2"
 
+%%%%% 
+% Breaks
 violaBreakI = {
   % s8
 %   | s1 * 46
@@ -45,3 +47,13 @@ violaBreakII = {
 violaBreakIII = { }
 
 violaBreakIV = { }
+
+%%%%%
+% Overrides
+violaOverridesI = { }
+
+violaOverridesII = { }
+
+violaOverridesIII = { }
+
+violaOverridesIV = { }
