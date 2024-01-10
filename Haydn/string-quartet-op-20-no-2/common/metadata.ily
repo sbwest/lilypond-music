@@ -1,6 +1,6 @@
-\version "2.24.1"
+\version "2.24.2"
 
-% \include "gonville-default.ily"
+\include "gonville-default.ily"
 
 \paper {
   #(set-paper-size "c4")
@@ -13,12 +13,11 @@
   % ragged-bottom = ##f
 }
 
-
-
 globalSettings = { 
   % \override Score.BarNumber.break-visibility = #end-of-line-invisible
   % \set Score.barNumberVisibility = #(every-nth-bar-number-visible 5)
   \override Score.BarNumber.stencil = #(make-stencil-boxer 0.1 0.25 ly:text-interface::print)
+  \override Score.BarNumber.font-name = "Tex Gyre Pagella"
   % \accidentalStyle modern
   \set baseMoment = #(ly:make-moment 1/8)
 }
@@ -50,42 +49,15 @@ globalSettings = {
   }
 }
 
-headerI = ""
-% headerI = \markup {
-%   \fill-line {
-%     \center-column { \raise #2 \bold \abs-fontsize #16 "I" } 
-%   }
-% }
-
-headerII = ""
-% headerII = \markup { 
-%   \fill-line {
-%     \center-column { \raise #2 \bold \abs-fontsize #16 "II" } 
-%   }
-% } % "Adagio"
-
-headerIII = ""
-% headerIII = \markup { 
-%   \fill-line {
-%     \center-column { \raise #2 \bold \abs-fontsize #16 "III" } 
-%   }
-% } % "Allegretto"
-headerIV = ""
-% headerIV = \markup { 
-%       \fill-line {
-%         \center-column { 
-%           \raise #4 {
-%             \bold \abs-fontsize #16 "IV"
-%             \bold \abs-fontsize #12 "Fuga a quattro soggetti"
-%           }
-%       }
-%     }
-% }
-
 timeI = { \time 4/4 \partial 8 }
 timeII = \time 4/4
 timeIII = \time 3/4
 timeIV = \time 6/8
+
+headerI = "I."
+headerII = "II. Capriccio"
+headerIII = "III."
+headerIV = \markup { "IV. " { \smallCaps "Fuga" } \italic "a quattro soggetti" }
 
 finalFermata = \mark \markup { \musicglyph #"scripts.ufermata" } 
 
@@ -93,6 +65,17 @@ repeatChord = #(define-music-function (parser location chord repeats) (ly:music?
   #{
     \repeat unfold $repeats $chord
   #})
+
+\markup pagella = \markup \override #'((font-name . "TeX Gyre Pagella") (font-size . 1)) \etc
+
+\markup pagellaBold = \markup \override #'((font-name . "Tex Gyre Pagella Bold") (font-size . 1)) \bold \etc
+
+\markup customTempo = \markup \override #'((font-name . "Tex Gyre Pagella Bold") (font-size . 1)) \etc
+
+violinIName = \markup \pagella "Violino I"
+violinIIName = \markup \pagella "Violino II"
+violaName = \markup \pagella "Viola"
+violoncelloName = \markup \pagella "Violoncello"
 
 staccato = \markup { \italic staccato }
 legato = \markup { \italic legato }

@@ -22,7 +22,7 @@
   \bookOutputName "Haydn - String Quartet Op. 20, No. 2 - Viola Part"
   \header {
     pdftitle = "Haydn - String Quartet Op. 20, No. 2 - Viola Part"
-    instrument = "Viola"
+    instrument = \violaName
   }
   \paper {
     first-page-number = 2
@@ -34,7 +34,7 @@
       piece = \headerI
     }
     \new Staff \with { \consists Page_turn_engraver } <<
-      \set Staff.instrumentName = "Viola."
+      \set Staff.instrumentName = \violaName
       
       \globalSettings
 

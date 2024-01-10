@@ -19,16 +19,17 @@
 \include "./violin2_overrides.ily"
 
 \bookpart {
+  \paper {
+    first-page-number = 1
+    % page-count = 4
+    % page-breaking = #ly:optimal-breaking
+  }
   \bookOutputName "Haydn - String Quartet Op. 20, No. 2 - Violin 2 Part"
   
   \header {
     pdftitle = "Haydn - String Quartet Op. 20, No. 2 - Violin 2 Part"
-    instrument = "Violino II"
+    instrument = \violinIIName
   
-  }
-  \paper {
-    first-page-number = 2
-    page-count = 4
   }
   
   \score {
@@ -36,14 +37,14 @@
       piece = \headerI
     }
     \new Staff \with { \consists Page_turn_engraver } <<
-      \set Staff.instrumentName = "Violino II."
+      \set Staff.instrumentName = \violinIIName
 
       \globalSettings
 
       \globalFirstMov
       \violinIIFirstMov
-      \new Voice = "breaks" { \violinIIBreakI }
-      \new Voice = "overrides" { \violinIIOverridesI }
+      % \new Voice = "breaks" { \violinIIBreakI }
+      % \new Voice = "overrides" { \violinIIOverridesI }
     >>
     \layout { }
   }
@@ -57,16 +58,14 @@
       \globalSecondMov
       \violinIISecondMov
       \new Voice = "breaks" { \violinIIBreakII }
-      \new Voice = "overrides" { \violinIIOverridesII }
+      % \new Voice = "overrides" { \violinIIOverridesII }
     >>
     \header {
       piece = \headerII
     }
     \layout { }
   }
-  
   \pageBreak
-  
   \score { 
     \header {
       piece = \headerIII
@@ -79,11 +78,11 @@
       \globalThirdMov
       \violinIIThirdMov
       \new Voice = "breaks" { \violinIIBreakIII }
-      \new Voice = "overrides" { \violinIIOverridesIII }
+      % \new Voice = "overrides" { \violinIIOverridesIII }
     >>
     \layout { }
   }
-
+  \noPageBreak
   \score { 
     \header {
       piece = \headerIV
@@ -96,7 +95,7 @@
       \globalFourthMov
       \violinIIFourthMov
       \new Voice = "breaks" { \violinIIBreakIV }
-      \new Voice = "overrides" { \violinIIOverridesIV }
+      % \new Voice = "overrides" { \violinIIOverridesIV }
     >>
     \layout { }
   }

@@ -31,11 +31,12 @@
   \bookOutputName "Haydn - String Quartet Op. 20, No. 2 - Violin 1 Part"
   \paper {
     first-page-number = 1
-    % page-count = 4
+    page-breaking = #ly:page-turn-breaking
+    page-count = 4
   }
   \header {
     pdftitle = "Haydn - String Quartet Op. 20, No. 2 - Violin 1 Part"
-    instrument = "Violino I"
+    instrument = \violinIName
   }
   
   \score {
@@ -43,7 +44,7 @@
       piece = \headerI
     }
     \new Staff \with { \consists Page_turn_engraver } <<
-      \set Staff.instrumentName = "Violino I."
+      \set Staff.instrumentName = \violinIName
 
       \globalSettings
       \globalFirstMov

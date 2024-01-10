@@ -1,8 +1,8 @@
-\version "2.24.1"
+\version "2.24.2"
 
 globalFourthMov = {
   \key c \major
   \override DynamicTextSpanner.style = #'none
-  \tempo "Allegro"
+  \tempo \markup \customTempo "Allegro"
   \time 6/8
 }

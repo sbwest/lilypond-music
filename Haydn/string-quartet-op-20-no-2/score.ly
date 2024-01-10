@@ -1,20 +1,19 @@
-\version "2.24.1"
+\version "2.24.2"
+
+\include "./common/metadata.ily"
 
 \paper {
-  % min-systems-per-page = 4
-%   max-systems-per-page = 5
   systems-per-page = 5
 }
 
-\header {
-  pdftitle = "Haydn - String Quartet Op. 20, No. 2 - Score"
+\layout {
+  #(layout-set-staff-size 16)
+  \context {
+    \Score
+    \override BarNumber.font-size = #1
+    % \override BarNumber.padding = #3
+  }
 }
-
-markingsI = { }
-markingsII = { }
-markingsIII = { }
-markingsIV = { }
-
 
 overridesI = { }
 overridesII = {
@@ -39,7 +38,9 @@ scoreBreaksI = {
 }
 
 scoreBreaksII = {
-  s1 * 3 \noBreak
+  s1 \noBreak
+  s1 \noBreak
+  s1 \noBreak
   s1 \break
   s1 * 3 \break
   s1 \noBreak
@@ -61,7 +62,6 @@ scoreBreaksIII = { }
 
 scoreBreaksIV = { }
 
-\include "./common/metadata.ily"
 \include "./parts/i-global.ily"
 \include "./parts/i-violin1.ily"
 \include "./parts/i-violin2.ily"
@@ -86,190 +86,161 @@ scoreBreaksIV = { }
 \include "./parts/iv-viola.ily"
 \include "./parts/iv-violoncello.ily"
 
-#(set-global-staff-size 16)
-
-\layout {
-  \context {
-    \Score
-    \override BarNumber.font-size = #1
-    % \override BarNumber.padding = #3
-  }
-}
-
-
 \bookpart {
   \bookOutputName "Haydn - String Quartet Op. 20, No. 2"
-  \header { } % New for \book format
   \score {
-    \header { % Relocated from after score block
-      piece = \headerI
-    }
     <<
       \new StaffGroup = "strings" <<
         \globalSettings
         \new Staff = "violinI" <<
           \set Staff.midiInstrument = #"violin"
-          \set Staff.instrumentName = "Violino I."
+          \set Staff.instrumentName = \violinIName
 
           \globalFirstMov
           \violinIFirstMov
-          % \new Voice = "markings" { \markingsI }
           \new Voice = "scoreBreaks" { \scoreBreaksI }
-          \new Voice = "overrides" { \overridesI }
+          % \new Voice = "overrides" { \overridesI }
         >>
         \new Staff = "violinII" <<
           \set Staff.midiInstrument = #"violin"
-          \set Staff.instrumentName = "Violino II."
+          \set Staff.instrumentName = \violinIIName
 
           \globalFirstMov
           \violinIIFirstMov
         >>
         \new Staff = "viola" <<
           \set Staff.midiInstrument = #"viola"
-          \set Staff.instrumentName = "Viola."
-
+          \set Staff.instrumentName = \violaName
 
           \globalFirstMov
           \violaFirstMov
         >>
         \new Staff = "cello" <<
           \set Staff.midiInstrument = #"cello"
-          \set Staff.instrumentName = "Violoncello."
+          \set Staff.instrumentName = \violoncelloName
 
           \globalFirstMov
           \celloFirstMov
         >>
       >>
     >>
+    \header {
+      piece = \headerI
+    }
     \layout { }
   } 
   
   \score {
-    \header {
-      piece = \headerII
-    }
     <<
       \new StaffGroup = "strings" <<
         \globalSettings
         \new Staff = "violinI" <<
           \set Staff.midiInstrument = #"violin"
 
-          \timeII
           \globalSecondMov
           \violinISecondMov
-          % \new Voice = "markings" { \markingsII }
-          \new Voice = "scoreBreaks" { \scoreBreaksII }
           \new Voice = "overrides" { \overridesII }
+          \new Voice = "scoreBreaks" { \scoreBreaksII }
         >>
         \new Staff = "violinII" <<
           \set Staff.midiInstrument = #"violin"
 
-          \timeII
           \globalSecondMov
           \violinIISecondMov
         >>
         \new Staff = "viola" <<
           \set Staff.midiInstrument = #"viola"
 
-          \timeII
           \globalSecondMov
           \violaSecondMov
         >>
         \new Staff = "cello" <<
           \set Staff.midiInstrument = #"cello"
 
-          \timeII
           \globalSecondMov
           \celloSecondMov
         >>
       >>
     >>
+    \header { 
+      piece = \headerII
+    }
     \layout { }
   }
-  
+  \pageBreak
   \score {
-    \header {
-      piece = \headerIII
-    }
     <<
       \new StaffGroup = "strings" <<
         \globalSettings
         \new Staff = "violinI" <<
           \set Staff.midiInstrument = #"violin"
 
-          \timeIII
           \globalThirdMov
           \violinIThirdMov
-          % \new Voice = "markings" { \markingsIII }
-          \new Voice = "scoreBreaks" { \scoreBreaksIII }
-          \new Voice = "overrides" { \overridesIII }
+          % \new Voice = "scoreBreaks" { \scoreBreaksIII }
+          % \new Voice = "overrides" { \overridesIII }
         >>
         \new Staff = "violinII" <<
           \set Staff.midiInstrument = #"viola"
 
-          \timeIII
           \globalThirdMov
           \violinIIThirdMov
         >>
         \new Staff = "viola" <<
           \set Staff.midiInstrument = #"cello"
 
-          \timeIII
           \globalThirdMov
           \violaThirdMov
         >>
         \new Staff = "cello" <<
           \set Staff.midiInstrument = #"cello"
 
-          \timeIII
           \globalThirdMov
           \celloThirdMov
         >>
       >>
     >>
+    \header {
+      piece = \headerIII
+    }
     \layout { }
   }
 
   \score {
-    \header {
-      piece = \headerIV
-    }
     <<
       \new StaffGroup = "strings" <<
         \globalSettings
         \new Staff = "violinI" <<
           \set Staff.midiInstrument = #"violin"
 
-          \timeIV
           \globalFourthMov
           \violinIFourthMov
-          % \new Voice = "markings" { \markingsIV }
-          \new Voice = "scoreBreaks" { \scoreBreaksIV }
-          \new Voice = "overrides" { \overridesIV }
+          % \new Voice = "scoreBreaks" { \scoreBreaksIV }
+          % \new Voice = "overrides" { \overridesIV }
         >>
         \new Staff = "violinII" <<
           \set Staff.midiInstrument = #"viola"
 
-          \timeIV
           \globalFourthMov
           \violinIIFourthMov
         >>
         \new Staff = "viola" <<
           \set Staff.midiInstrument = #"cello"
 
-          \timeIV
           \globalFourthMov
           \violaFourthMov
         >>
         \new Staff = "cello" <<
           \set Staff.midiInstrument = #"cello"
 
-          \timeIV
           \globalFourthMov
           \celloFourthMov
         >>
       >>
     >>
+    \header { 
+      piece = \headerIV
+    }
     \layout { }
   }
 }
@@ -323,28 +294,24 @@ scoreBreaksIV = { }
         \new Staff = "violinI" <<
           \set Staff.midiInstrument = #"violin"
 
-          \timeII
           \globalSecondMov
           \violinISecondMov
         >>
         \new Staff = "violinII" <<
           \set Staff.midiInstrument = #"violin"
 
-          \timeII
           \globalSecondMov
           \violinIISecondMov
         >>
         \new Staff = "viola" <<
           \set Staff.midiInstrument = #"viola"
 
-          \timeII
           \globalSecondMov
           \violaSecondMov
         >>
         \new Staff = "cello" <<
           \set Staff.midiInstrument = #"cello"
 
-          \timeII
           \globalSecondMov
           \celloSecondMov
         >>
@@ -361,28 +328,24 @@ scoreBreaksIV = { }
         \new Staff = "violinI" <<
           \set Staff.midiInstrument = #"violin"
 
-          \timeIII
           \globalThirdMov
           \violinIThirdMov
         >>
         \new Staff = "violinII" <<
           \set Staff.midiInstrument = #"viola"
 
-          \timeIII
           \globalThirdMov
           \violinIIThirdMov
         >>
         \new Staff = "viola" <<
           \set Staff.midiInstrument = #"cello"
 
-          \timeIII
           \globalThirdMov
           \violaThirdMov
         >>
         \new Staff = "cello" <<
           \set Staff.midiInstrument = #"cello"
 
-          \timeIII
           \globalThirdMov
           \celloThirdMov
         >>
@@ -398,28 +361,24 @@ scoreBreaksIV = { }
         \new Staff = "violinI" <<
           \set Staff.midiInstrument = #"violin"
 
-          \timeIV
           \globalFourthMov
           \violinIFourthMov
         >>
         \new Staff = "violinII" <<
           \set Staff.midiInstrument = #"viola"
 
-          \timeIV
           \globalFourthMov
           \violinIIFourthMov
         >>
         \new Staff = "viola" <<
           \set Staff.midiInstrument = #"cello"
 
-          \timeIV
           \globalFourthMov
           \violaFourthMov
         >>
         \new Staff = "cello" <<
           \set Staff.midiInstrument = #"cello"
 
-          \timeIV
           \globalFourthMov
           \celloFourthMov
         >>

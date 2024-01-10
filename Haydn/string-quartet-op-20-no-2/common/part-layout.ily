@@ -1,17 +1,14 @@
-\version "2.24.1"
+\version "2.24.2"
 
 % Part Layout Settings
-
-#(set-global-staff-size 18)
-
 \paper {
-  page-breaking = #ly:page-turn-breaking
+  % page-breaking = #ly:page-turn-breaking
   % #(set-paper-size "a4")
   ragged-last-bottom = ##t
-  
 }
 
 \layout {
+  #(layout-set-staff-size 18)
   \compressEmptyMeasures
   \context {
     \Score

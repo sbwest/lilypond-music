@@ -1,8 +1,8 @@
-\version "2.24.1"
+\version "2.24.2"
 
 globalThirdMov = {
   \key c \major
   \override DynamicTextSpanner.style = #'none
-  \tempo "Allegretto"
+  \tempo \markup \customTempo "Allegretto"
   \time 3/4
 }

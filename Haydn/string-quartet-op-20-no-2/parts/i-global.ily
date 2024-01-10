@@ -1,7 +1,7 @@
-\version "2.24.1"
+\version "2.24.2"
 globalFirstMov = {
   \key c \major
-  \tempo "Moderato"
+  \tempo \markup \customTempo "Moderato"
   \time 4/4
   \partial 8
 }
