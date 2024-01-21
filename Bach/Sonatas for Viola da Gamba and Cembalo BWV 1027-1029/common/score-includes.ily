@@ -81,8 +81,6 @@ sonataTwoGambaThirdMov = \gambaThirdMov
 sonataTwoCembaloRThirdMov = \cembaloRThirdMov
 sonataTwoCembaloLThirdMov = \cembaloLThirdMov
 
-
-
 %% Fourth movement
 \include "../BWV-1028/parts/iv-global.ily"
 \include "../BWV-1028/parts/iv-gamba.ily"
@@ -96,25 +94,34 @@ sonataTwoCembaloLFourthMov = \cembaloLFourthMov
 
 %%%%% BWV 1029
 %% First movement
-% \include "../BWV-1029/parts/i-global.ily"
-% \include "../BWV-1029/parts/i-gamba.ily"
-% \include "../BWV-1029/parts/i-cembaloR.ily"
-% \include "../BWV-1029/parts/i-cembaloL.ily"
+\include "../BWV-1029/parts/i-global.ily"
+\include "../BWV-1029/parts/i-gamba.ily"
+\include "../BWV-1029/parts/i-cembaloR.ily"
+\include "../BWV-1029/parts/i-cembaloL.ily"
+
+sonataThreeGlobalFirstMov = \globalFirstMov
+sonataThreeGambaFirstMov = \gambaFirstMov
+sonataThreeCembaloRFirstMov = \cembaloRFirstMov
+sonataThreeCembaloLFirstMov = \cembaloLFirstMov
 
 %% Second movement
-% \include "../BWV-1029/parts/ii-global.ily"
-% \include "../BWV-1029/parts/ii-gamba.ily"
-% \include "../BWV-1029/parts/ii-cembaloR.ily"
-% \include "../BWV-1029/parts/ii-cembaloL.ily"
+\include "../BWV-1029/parts/ii-global.ily"
+\include "../BWV-1029/parts/ii-gamba.ily"
+\include "../BWV-1029/parts/ii-cembaloR.ily"
+\include "../BWV-1029/parts/ii-cembaloL.ily"
+
+sonataThreeGlobalSecondMov = \globalSecondMov
+sonataThreeGambaSecondMov = \gambaSecondMov
+sonataThreeCembaloRSecondMov = \cembaloRSecondMov
+sonataThreeCembaloLSecondMov = \cembaloLSecondMov
 
 %% Third movement
-% \include "../BWV-1029/parts/iii-global.ily"
-% \include "../BWV-1029/parts/iii-gamba.ily"
-% \include "../BWV-1029/parts/iii-cembaloR.ily"
-% \include "../BWV-1029/parts/iii-cembaloL.ily"
+\include "../BWV-1029/parts/iii-global.ily"
+\include "../BWV-1029/parts/iii-gamba.ily"
+\include "../BWV-1029/parts/iii-cembaloR.ily"
+\include "../BWV-1029/parts/iii-cembaloL.ily"
 
-%% Fourth movement
-% \include "../BWV-1029/parts/iv-global.ily"
-% \include "../BWV-1029/parts/iv-gamba.ily"
-% \include "../BWV-1029/parts/iv-cembaloR.ily"
-% \include "../BWV-1029/parts/iv-cembaloL.ily"
+sonataThreeGlobalThirdMov = \globalThirdMov
+sonataThreeGambaThirdMov = \gambaThirdMov
+sonataThreeCembaloRThirdMov = \cembaloRThirdMov
+sonataThreeCembaloLThirdMov = \cembaloLThirdMov

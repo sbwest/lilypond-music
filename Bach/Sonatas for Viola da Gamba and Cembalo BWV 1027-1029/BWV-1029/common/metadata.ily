@@ -25,7 +25,7 @@ globalSettings = {
   \override Score.BarNumber.stencil = #(make-stencil-boxer 0.1 0.25 ly:text-interface::print)
   % Set bar number font
   \override Score.BarNumber.font-name = "Tex Gyre Pagella"
-  % \accidentalStyle modern
+  \accidentalStyle modern
   %% If sub beaming is desired, specify base value here
   % \set baseMoment = #(ly:make-moment 1/8)
 }
@@ -60,7 +60,7 @@ globalSettings = {
 
 %%%%%
 % Custom font markup functions
-\markup pagella = \markup \override #'((font-name . "TeX Gyre Pagella") (font-size . 1)) \etc
+\markup pagella = \markup \override #'((font-name . "TeX Gyre Pagella") (font-size . 0)) \etc
 \markup pagellaBold = \markup \override #'((font-name . "Tex Gyre Pagella Bold") (font-size . 1)) \etc
 \markup customTempo = \markup \override #'((font-name . "Tex Gyre Pagella Bold") (font-size . 1)) \etc
 
