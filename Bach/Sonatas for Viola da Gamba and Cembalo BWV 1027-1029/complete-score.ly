@@ -24,11 +24,11 @@
 \include "./common/score-includes.ily"
 
 % PDF
-\book { 
+\book {
   % Specify output filename
   \bookOutputName \fileName
   \bookOutputSuffix "score"
-  \header { 
+  \header {
     composer = ##f
     subtitle = \markup { \smallCaps \abs-fontsize #16 "Johann Sebastian Bach" }
   }
@@ -50,20 +50,20 @@
         \new Staff = "gamba"
         \with { instrumentName = \gambaName}
         <<
-          \globalFirstMov
-          \gambaFirstMov
+          \sonataOneGlobalFirstMov
+          \sonataOneGambaFirstMov
         >>
         \new PianoStaff = "cembalo"
         \with { instrumentName = \cembaloName }
         <<
-            \new Staff = "right" {
-              \globalFirstMov
-              \cembaloRFirstMov
-            }
-            \new Staff = "left" {
-              \globalFirstMov
-              \cembaloLFirstMov
-            }
+          \new Staff = "right" {
+            \sonataOneGlobalFirstMov
+            \sonataOneCembaloRFirstMov
+          }
+          \new Staff = "left" {
+            \sonataOneGlobalFirstMov
+            \sonataOneCembaloLFirstMov
+          }
         >>
       >>
       \header {
@@ -72,6 +72,115 @@
       \layout {
         indent = 1\in
       }
-    } 
+    }
+
+    \pageBreak
+    \score {
+      % \paper {
+      %   page-breaking = #ly:optimal-breaking
+      % }
+      <<
+        \globalSettings
+        \new Staff = "gamba"
+        <<
+          \globalSecondMov
+          \gambaSecondMov
+
+          % \new Voice = "scoreBreaks" { \scoreBreaksII }
+        >>
+        \new PianoStaff = "cembalo"
+        <<
+          \new Staff = "right" {
+            \globalSecondMov
+            \cembaloRSecondMov
+          }
+          \new Staff = "left" {
+            \globalSecondMov
+            \cembaloLSecondMov
+          }
+        >>
+      >>
+      \header {
+        title = ##f
+        subtitle = ##f
+        composer = ##f
+        piece = \sonataOneHeaderII
+      }
+      \layout {
+
+      }
+    }
+    \pageBreak
+    \score {
+      % \paper {
+      %   page-breaking = #ly:optimal-breaking
+      % }
+      <<
+        \globalSettings
+        \new Staff = "gamba"
+        <<
+          \globalThirdMov
+          \gambaThirdMov
+
+          % \new Voice = "scoreBreaks" { \scoreBreaksIII }
+        >>
+        \new PianoStaff = "cembalo"
+        <<
+          \new Staff = "right" {
+            \globalThirdMov
+            \cembaloRThirdMov
+          }
+          \new Staff = "left" {
+            \globalThirdMov
+            \cembaloLThirdMov
+          }
+        >>
+      >>
+      \header {
+        title = ##f
+        subtitle = ##f
+        composer = ##f
+        piece = \headerIII
+      }
+      \layout {
+
+      }
+    }
+    \pageBreak
+    \score {
+      % \paper {
+      %   page-breaking = #ly:optimal-breaking
+      % }
+      <<
+        \globalSettings
+        \new Staff = "gamba"
+        <<
+          \globalFourthMov
+          \gambaFourthMov
+
+          % \new Voice = "scoreBreaks" { \scoreBreaksIV }
+        >>
+        \new PianoStaff = "cembalo"
+        <<
+          \new Staff = "right" {
+            \globalFourthMov
+            \cembaloRFourthMov
+          }
+          \new Staff = "left" {
+            \globalFourthMov
+            \cembaloLFourthMov
+          }
+        >>
+      >>
+      \header {
+        title = ##f
+        subtitle = ##f
+        composer = ##f
+        piece = \sonataOneHeaderIV
+      }
+      \layout {
+
+      }
+    }
   }
 }

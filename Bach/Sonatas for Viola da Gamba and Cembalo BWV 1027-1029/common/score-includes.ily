@@ -9,23 +9,43 @@
 \include "../BWV-1027/parts/i-cembaloR.ily"
 \include "../BWV-1027/parts/i-cembaloL.ily"
 
+sonataOneGlobalFirstMov = \globalFirstMov
+sonataOneGambaFirstMov = \gambaFirstMov
+sonataOneCembaloRFirstMov = \cembaloRFirstMov
+sonataOneCembaloLFirstMov = \cembaloLFirstMov
+
 %% Second movement
-% \include "../BWV-1027/parts/ii-global.ily"
-% \include "../BWV-1027/parts/ii-gamba.ily"
-% \include "../BWV-1027/parts/ii-cembaloR.ily"
-% \include "../BWV-1027/parts/ii-cembaloL.ily"
+\include "../BWV-1027/parts/ii-global.ily"
+\include "../BWV-1027/parts/ii-gamba.ily"
+\include "../BWV-1027/parts/ii-cembaloR.ily"
+\include "../BWV-1027/parts/ii-cembaloL.ily"
+
+sonataOneGlobalSecondMov = \globalSecondMov
+sonataOneGambaSecondMov = \gambaSecondMov
+sonataOneCembaloRSecondMov = \cembaloRSecondMov
+sonataOneCembaloLSecondMov = \cembaloLSecondMov
 
 %% Third movement
-% \include "../BWV-1027/parts/iii-global.ily"
-% \include "../BWV-1027/parts/iii-gamba.ily"
-% \include "../BWV-1027/parts/iii-cembaloR.ily"
-% \include "../BWV-1027/parts/iii-cembaloL.ily"
+\include "../BWV-1027/parts/iii-global.ily"
+\include "../BWV-1027/parts/iii-gamba.ily"
+\include "../BWV-1027/parts/iii-cembaloR.ily"
+\include "../BWV-1027/parts/iii-cembaloL.ily"
+
+sonataOneGlobalThirdMov = \globalThirdMov
+sonataOneGambaThirdMov = \gambaThirdMov
+sonataOneCembaloRThirdMov = \cembaloRThirdMov
+sonataOneCembaloLThirdMov = \cembaloLThirdMov
 
 %% Fourth movement
-% \include "../BWV-1027/parts/iv-global.ily"
-% \include "../BWV-1027/parts/iv-gamba.ily"
-% \include "../BWV-1027/parts/iv-cembaloR.ily"
-% \include "../BWV-1027/parts/iv-cembaloL.ily"
+\include "../BWV-1027/parts/iv-global.ily"
+\include "../BWV-1027/parts/iv-gamba.ily"
+\include "../BWV-1027/parts/iv-cembaloR.ily"
+\include "../BWV-1027/parts/iv-cembaloL.ily"
+
+sonataOneGlobalFourthMov = \globalFourthMov
+sonataOneGambaFourthMov = \gambaFourthMov
+sonataOneCembaloRFourthMov = \cembaloRFourthMov
+sonataOneCembaloLFourthMov = \cembaloLFourthMov
 
 %%%%% BWV 1028
 %% First movement
