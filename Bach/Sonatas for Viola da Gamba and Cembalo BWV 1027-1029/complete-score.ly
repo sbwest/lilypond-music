@@ -36,7 +36,7 @@
   \markuplist \table-of-contents
   \pageBreak
   \bookpart {
-    \tocItem \markup "Sonata in G Major"
+    \tocItem \markup "Sonata in G Major, BWV 1027"
     \header {
       title = "Sonata"
       subtitle = ##f
@@ -47,6 +47,7 @@
     % Each \score block is for a movement of the piece. Only the first score block will include the instrument name.
     \score {
       <<
+        \globalSettings
         \new Staff = "gamba"
         \with { instrumentName = \gambaName}
         <<
@@ -83,20 +84,20 @@
         \globalSettings
         \new Staff = "gamba"
         <<
-          \globalSecondMov
-          \gambaSecondMov
+          \sonataOneGlobalSecondMov
+          \sonataOneGambaSecondMov
 
           % \new Voice = "scoreBreaks" { \scoreBreaksII }
         >>
         \new PianoStaff = "cembalo"
         <<
           \new Staff = "right" {
-            \globalSecondMov
-            \cembaloRSecondMov
+            \sonataOneGlobalSecondMov
+            \sonataOneCembaloRSecondMov
           }
           \new Staff = "left" {
-            \globalSecondMov
-            \cembaloLSecondMov
+            \sonataOneGlobalSecondMov
+            \sonataOneCembaloLSecondMov
           }
         >>
       >>
@@ -119,20 +120,19 @@
         \globalSettings
         \new Staff = "gamba"
         <<
-          \globalThirdMov
-          \gambaThirdMov
+          \sonataOneGlobalThirdMov
+          \sonataOneGambaThirdMov
 
-          % \new Voice = "scoreBreaks" { \scoreBreaksIII }
         >>
         \new PianoStaff = "cembalo"
         <<
           \new Staff = "right" {
-            \globalThirdMov
-            \cembaloRThirdMov
+            \sonataOneGlobalThirdMov
+            \sonataOneCembaloRThirdMov
           }
           \new Staff = "left" {
-            \globalThirdMov
-            \cembaloLThirdMov
+            \sonataOneGlobalThirdMov
+            \sonataOneCembaloLThirdMov
           }
         >>
       >>
@@ -140,7 +140,7 @@
         title = ##f
         subtitle = ##f
         composer = ##f
-        piece = \headerIII
+        piece = \sonataOneHeaderIII
       }
       \layout {
 
@@ -155,20 +155,20 @@
         \globalSettings
         \new Staff = "gamba"
         <<
-          \globalFourthMov
-          \gambaFourthMov
+          \sonataOneGlobalFourthMov
+          \sonataOneGambaFourthMov
 
           % \new Voice = "scoreBreaks" { \scoreBreaksIV }
         >>
         \new PianoStaff = "cembalo"
         <<
           \new Staff = "right" {
-            \globalFourthMov
-            \cembaloRFourthMov
+            \sonataOneGlobalFourthMov
+            \sonataOneCembaloRFourthMov
           }
           \new Staff = "left" {
-            \globalFourthMov
-            \cembaloLFourthMov
+            \sonataOneGlobalFourthMov
+            \sonataOneCembaloLFourthMov
           }
         >>
       >>
@@ -177,6 +177,156 @@
         subtitle = ##f
         composer = ##f
         piece = \sonataOneHeaderIV
+      }
+      \layout {
+
+      }
+    }
+  }
+
+  \bookpart {
+    \tocItem \markup "Sonata in D Major, BWV 1028"
+    \header {
+      title = "Sonata"
+      subtitle = ##f
+      subsubtitle = "BWV 1028"
+      composer = ##f
+      % breakbefore = ##t
+    }
+    % Each \score block is for a movement of the piece. Only the first score block will include the instrument name.
+    \score {
+      <<
+        \globalSettings
+        \new Staff = "gamba"
+        \with { instrumentName = \gambaName}
+        <<
+          \sonataTwoGlobalFirstMov
+          \sonataTwoGambaFirstMov
+        >>
+        \new PianoStaff = "cembalo"
+        \with { instrumentName = \cembaloName }
+        <<
+          \new Staff = "right" {
+            \sonataTwoGlobalFirstMov
+            \sonataTwoCembaloRFirstMov
+          }
+          \new Staff = "left" {
+            \sonataTwoGlobalFirstMov
+            \sonataTwoCembaloLFirstMov
+          }
+        >>
+      >>
+      \header {
+        piece = \sonataTwoHeaderI
+      }
+      \layout {
+        indent = 1\in
+      }
+    }
+
+    % \pageBreak
+    \score {
+      % \paper {
+      %   page-breaking = #ly:optimal-breaking
+      % }
+      <<
+        \globalSettings
+        \new Staff = "gamba"
+        <<
+          \sonataTwoGlobalSecondMov
+          \sonataTwoGambaSecondMov
+
+          % \new Voice = "scoreBreaks" { \scoreBreaksII }
+        >>
+        \new PianoStaff = "cembalo"
+        <<
+          \new Staff = "right" {
+            \sonataTwoGlobalSecondMov
+            \sonataTwoCembaloRSecondMov
+          }
+          \new Staff = "left" {
+            \sonataTwoGlobalSecondMov
+            \sonataTwoCembaloLSecondMov
+          }
+        >>
+      >>
+      \header {
+        title = ##f
+        subtitle = ##f
+        composer = ##f
+        piece = \sonataTwoHeaderII
+      }
+      \layout {
+
+      }
+    }
+    \pageBreak
+    \score {
+      % \paper {
+      %   page-breaking = #ly:optimal-breaking
+      % }
+      <<
+        \globalSettings
+        \new Staff = "gamba"
+        <<
+          \sonataTwoGlobalThirdMov
+          \sonataTwoGambaThirdMov
+
+          % \new Voice = "scoreBreaks" { \scoreBreaksIII }
+        >>
+        \new PianoStaff = "cembalo"
+        <<
+          \new Staff = "right" {
+            \sonataTwoGlobalThirdMov
+            \sonataTwoCembaloRThirdMov
+          }
+          \new Staff = "left" {
+            \sonataTwoGlobalThirdMov
+            \sonataTwoCembaloLThirdMov
+          }
+        >>
+      >>
+      \header {
+        title = ##f
+        subtitle = ##f
+        composer = ##f
+        piece = \sonataTwoHeaderIII
+      }
+      \layout {
+
+      }
+    }
+    % \pageBreak
+    \score {
+      % \paper {
+      %   page-breaking = #ly:optimal-breaking
+      % }
+      <<
+        \globalSettings
+        \new Staff = "gamba"
+        <<
+          \sonataTwoGlobalFourthMov
+          \sonataTwoGambaFourthMov
+
+          % \new Voice = "scoreBreaks" { \scoreBreaksIV }
+        >>
+        \new PianoStaff = "cembalo"
+        <<
+          \new Staff = "right" {
+            \sonataTwoGlobalFourthMov
+            \sonataTwoCembaloRFourthMov
+          }
+          \new Staff = "left" {
+            \sonataTwoGlobalFourthMov
+            \sonataTwoCembaloLFourthMov
+          }
+        >>
+      >>
+      \header {
+        title = ##f
+        subtitle = ##f
+        composer = ##f
+        piece = \sonataTwoHeaderIV
       }
       \layout {
 
