@@ -93,6 +93,11 @@ sonataOneHeaderII = "2. Allegro ma non tanto"
 sonataOneHeaderIII = "3. Andante"
 sonataOneHeaderIV = "4. Allegro moderato"
 
+sonataTwoHeaderI = "1. Adagio"
+sonataTwoHeaderII = "2. Allegro"
+sonataTwoHeaderIII = "3. Andante"
+sonataTwoHeaderIV = "4. Allegro"
+
 %%%%%
 % Custom dynamics & expressions 
 % These are two examples of a dynamic script and a text script

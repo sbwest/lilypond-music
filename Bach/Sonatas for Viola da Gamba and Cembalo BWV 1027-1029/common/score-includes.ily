@@ -49,28 +49,50 @@ sonataOneCembaloLFourthMov = \cembaloLFourthMov
 
 %%%%% BWV 1028
 %% First movement
-% \include "../BWV-1028/parts/i-global.ily"
-% \include "../BWV-1028/parts/i-gamba.ily"
-% \include "../BWV-1028/parts/i-cembaloR.ily"
-% \include "../BWV-1028/parts/i-cembaloL.ily"
+\include "../BWV-1028/parts/i-global.ily"
+\include "../BWV-1028/parts/i-gamba.ily"
+\include "../BWV-1028/parts/i-cembaloR.ily"
+\include "../BWV-1028/parts/i-cembaloL.ily"
+
+sonataTwoGlobalFirstMov = \globalFirstMov
+sonataTwoGambaFirstMov = \gambaFirstMov
+sonataTwoCembaloRFirstMov = \cembaloRFirstMov
+sonataTwoCembaloLFirstMov = \cembaloLFirstMov
 
 %% Second movement
-% \include "../BWV-1028/parts/ii-global.ily"
-% \include "../BWV-1028/parts/ii-gamba.ily"
-% \include "../BWV-1028/parts/ii-cembaloR.ily"
-% \include "../BWV-1028/parts/ii-cembaloL.ily"
+\include "../BWV-1028/parts/ii-global.ily"
+\include "../BWV-1028/parts/ii-gamba.ily"
+\include "../BWV-1028/parts/ii-cembaloR.ily"
+\include "../BWV-1028/parts/ii-cembaloL.ily"
+
+sonataTwoGlobalSecondMov = \globalSecondMov
+sonataTwoGambaSecondMov = \gambaSecondMov
+sonataTwoCembaloRSecondMov = \cembaloRSecondMov
+sonataTwoCembaloLSecondMov = \cembaloLSecondMov
 
 %% Third movement
-% \include "../BWV-1028/parts/iii-global.ily"
-% \include "../BWV-1028/parts/iii-gamba.ily"
-% \include "../BWV-1028/parts/iii-cembaloR.ily"
-% \include "../BWV-1028/parts/iii-cembaloL.ily"
+\include "../BWV-1028/parts/iii-global.ily"
+\include "../BWV-1028/parts/iii-gamba.ily"
+\include "../BWV-1028/parts/iii-cembaloR.ily"
+\include "../BWV-1028/parts/iii-cembaloL.ily"
+
+sonataTwoGlobalThirdMov = \globalThirdMov
+sonataTwoGambaThirdMov = \gambaThirdMov
+sonataTwoCembaloRThirdMov = \cembaloRThirdMov
+sonataTwoCembaloLThirdMov = \cembaloLThirdMov
+
+
 
 %% Fourth movement
-% \include "../BWV-1028/parts/iv-global.ily"
-% \include "../BWV-1028/parts/iv-gamba.ily"
-% \include "../BWV-1028/parts/iv-cembaloR.ily"
-% \include "../BWV-1028/parts/iv-cembaloL.ily"
+\include "../BWV-1028/parts/iv-global.ily"
+\include "../BWV-1028/parts/iv-gamba.ily"
+\include "../BWV-1028/parts/iv-cembaloR.ily"
+\include "../BWV-1028/parts/iv-cembaloL.ily"
+
+sonataTwoGlobalFourthMov = \globalFourthMov
+sonataTwoGambaFourthMov = \gambaFourthMov
+sonataTwoCembaloRFourthMov = \cembaloRFourthMov
+sonataTwoCembaloLFourthMov = \cembaloLFourthMov
 
 %%%%% BWV 1029
 %% First movement
