@@ -30,21 +30,24 @@
   \bookOutputSuffix "score"
   \header {
     composer = ##f
+    opus = ##f
     subtitle = \markup { \smallCaps \abs-fontsize #16 "Johann Sebastian Bach" }
   }
   \pageBreak
   \markuplist \table-of-contents
   \pageBreak
   \bookpart {
-    \tocItem \markup "Sonata in G Major, BWV 1027"
+    \tocItem sonataOne \markup "Sonata in G Major, BWV 1027"
     \header {
       title = "Sonata"
       subtitle = ##f
+      opus = ##f
       subsubtitle = "BWV 1027"
       composer = ##f
       % breakbefore = ##t
     }
     % Each \score block is for a movement of the piece. Only the first score block will include the instrument name.
+    \tocItem sonataOne.I \markup "1. Adagio"
     \score {
       <<
         \globalSettings
@@ -76,10 +79,8 @@
     }
 
     \pageBreak
+    \tocItem sonataOne.II \markup "2. Allegro ma non tanto"
     \score {
-      % \paper {
-      %   page-breaking = #ly:optimal-breaking
-      % }
       <<
         \globalSettings
         \new Staff = "gamba"
@@ -107,11 +108,10 @@
         composer = ##f
         piece = \sonataOneHeaderII
       }
-      \layout {
-
-      }
+      \layout { }
     }
     \pageBreak
+    \tocItem sonataOne.III \markup "3. Andante"
     \score {
       % \paper {
       %   page-breaking = #ly:optimal-breaking
@@ -142,15 +142,11 @@
         composer = ##f
         piece = \sonataOneHeaderIII
       }
-      \layout {
-
-      }
+      \layout { }
     }
     \pageBreak
+    \tocItem sonataOne.IV \markup "4. Allegro moderato"
     \score {
-      % \paper {
-      %   page-breaking = #ly:optimal-breaking
-      % }
       <<
         \globalSettings
         \new Staff = "gamba"
@@ -178,14 +174,12 @@
         composer = ##f
         piece = \sonataOneHeaderIV
       }
-      \layout {
-
-      }
+      \layout { }
     }
   }
 
   \bookpart {
-    \tocItem \markup "Sonata in D Major, BWV 1028"
+    \tocItem sonataTwo \markup "Sonata in D Major, BWV 1028"
     \header {
       title = "Sonata"
       subtitle = ##f
@@ -194,6 +188,7 @@
       % breakbefore = ##t
     }
     % Each \score block is for a movement of the piece. Only the first score block will include the instrument name.
+    \tocItem sonataTwo.I \markup "1. Adagio"
     \score {
       <<
         \globalSettings
@@ -223,12 +218,8 @@
         indent = 1\in
       }
     }
-
-    % \pageBreak
+    \tocItem sonataTwo.II \markup "2. Allegro"
     \score {
-      % \paper {
-      %   page-breaking = #ly:optimal-breaking
-      % }
       <<
         \globalSettings
         \new Staff = "gamba"
@@ -256,11 +247,10 @@
         composer = ##f
         piece = \sonataTwoHeaderII
       }
-      \layout {
-
-      }
+      \layout { }
     }
     \pageBreak
+    \tocItem sonataTwo.III \markup "3. Andante"
     \score {
       % \paper {
       %   page-breaking = #ly:optimal-breaking
@@ -292,11 +282,10 @@
         composer = ##f
         piece = \sonataTwoHeaderIII
       }
-      \layout {
-
-      }
+      \layout { }
     }
-    % \pageBreak
+    
+    \tocItem sonataTwo.IV \markup "4. Allegro"
     \score {
       % \paper {
       %   page-breaking = #ly:optimal-breaking
@@ -328,22 +317,20 @@
         composer = ##f
         piece = \sonataTwoHeaderIV
       }
-      \layout {
-
-      }
+      \layout { }
     }
   }
 
   \bookpart {
-    \tocItem \markup "Sonata in G Minor, BWV 1029"
+    \tocItem sonataThree \markup "Sonata in G Minor, BWV 1029"
     \header {
       title = "Sonata"
       subtitle = ##f
       subsubtitle = "BWV 1029"
       composer = ##f
-      % breakbefore = ##t
     }
     % Each \score block is for a movement of the piece. Only the first score block will include the instrument name.
+    \tocItem sonataThree.I \markup "1. Vivace"
     \score {
       <<
         \globalSettings
@@ -374,11 +361,8 @@
       }
     }
 
-    % \pageBreak
+    \tocItem sonataThree.II \markup "2. Adagio"
     \score {
-      % \paper {
-      %   page-breaking = #ly:optimal-breaking
-      % }
       <<
         \globalSettings
         \new Staff = "gamba"
@@ -406,23 +390,17 @@
         composer = ##f
         piece = \sonataThreeHeaderII
       }
-      \layout {
-
-      }
+      \layout { }
     }
+    \tocItem sonataThree.III \markup "3. Allegro"
     \pageBreak
     \score {
-      % \paper {
-      %   page-breaking = #ly:optimal-breaking
-      % }
       <<
         \globalSettings
         \new Staff = "gamba"
         <<
           \sonataThreeGlobalThirdMov
           \sonataThreeGambaThirdMov
-
-          % \new Voice = "scoreBreaks" { \scoreBreaksIII }
         >>
         \new PianoStaff = "cembalo"
         <<
@@ -442,9 +420,7 @@
         composer = ##f
         piece = \sonataThreeHeaderIII
       }
-      \layout {
-
-      }
+      \layout { }
     }
   }
 }
