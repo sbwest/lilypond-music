@@ -38,7 +38,7 @@
 % PDF
 \bookpart {
   % Specify output filename
-  % \bookOutputName \fileName
+  \bookOutputName \fileName
   % Each \score block is for a movement of the piece. Only the first score block will include the instrument name.
   \score {
     <<
@@ -107,9 +107,7 @@
       composer = ##f
       piece = \headerII
     }
-    \layout { 
-      
-    }
+    \layout { }
   } 
   % \pageBreak
   \score {
@@ -151,8 +149,6 @@
       composer = ##f
       piece = \headerIII
     }
-    \layout { 
-      
-    }
+    \layout { }
   } 
 }
