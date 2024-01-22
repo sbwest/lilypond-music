@@ -46,19 +46,17 @@ globalSettings = {
     }
   }
   subsubtitle = \markup {\abs-fontsize #12 "BWV 1027-1029" }
-  % opus = ""
+  opus = "BWV 1027-1029"
   composer = "J.S. Bach"
-  date = ""
-  source = ""
-  style = ""
-  mutopiatitle = ""
+  source = "Neue Bach-Ausgabe BA 5063"
+  style = "Baroque"
+  mutopiatitle = "Sonatas for Viola da Gamba and Harpsichord"
   mutopiacomposer = "BachJS"
   mutopiaopus = "BWV 1027-1029"
   mutopiainstrument = "Viola da Gamba, Harpsichord"
   license = "Creative Commons 4.0"
   maintainer = "Bryan West"
   maintainerEmail = "bryan.west@protonmail.com"
-  moreInfo = ""
   tagline = ##f
 }
 

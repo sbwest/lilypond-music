@@ -33,19 +33,17 @@ globalSettings = {
 \header {
   title = \markup { \abs-fontsize #20 "Sonata" } 
   subtitle = \markup {\abs-fontsize #12 "BWV 1027" }
-  % opus = ""
+  % opus = "BWV 1027"
   composer = \markup { \abs-fontsize #12 "J.S. Bach" }
-  date = ""
-  source = ""
-  style = ""
-  mutopiatitle = ""
-  mutopiacomposer = ""
+  source = "Neue Bach-Ausgabe BA 5063"
+  style = "Baroque"
+  mutopiatitle = "Sonata in G Major for Viola da Gamba and Harpsichord"
+  mutopiacomposer = "BachJS"
   mutopiaopus = "BWV 1027"
-  mutopiainstrument = ""
+  mutopiainstrument = "Viola da Gamba, Harpsichord"
   license = "Creative Commons 4.0"
   maintainer = "Bryan West"
   maintainerEmail = "bryan.west@protonmail.com"
-  moreInfo = ""
   tagline = ##f
 }
 
