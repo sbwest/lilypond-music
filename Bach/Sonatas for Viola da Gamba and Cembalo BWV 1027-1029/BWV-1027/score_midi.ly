@@ -5,9 +5,10 @@
 \include "./common/score-includes.ily"
 
 % MIDI
-\bookpart {
-  \bookOutputName \fileName
+\book {
   #(ly:set-option 'midi-extension "mid")
+  \bookOutputName \fileName
+  \bookOutputSuffix "1"
   \score {
     \unfoldRepeats
     <<
@@ -32,7 +33,12 @@
       >>
     >>
     \include "./parts/i-midi.ily"
-  }    
+  }
+}
+\book {   
+  #(ly:set-option 'midi-extension "mid")
+  \bookOutputName \fileName
+  \bookOutputSuffix "2" 
   \score {
     \unfoldRepeats
     <<
@@ -58,7 +64,11 @@
     >>
     \include "./parts/ii-midi.ily"
   }
-
+}
+\book {
+  #(ly:set-option 'midi-extension "mid")
+  \bookOutputName \fileName
+  \bookOutputSuffix "3"
   \score {
     \unfoldRepeats
     <<
@@ -84,7 +94,11 @@
     >>
     \include "./parts/iii-midi.ily"
   }
-
+}
+\book{
+  #(ly:set-option 'midi-extension "mid")
+  \bookOutputName \fileName
+  \bookOutputSuffix "4"
   \score {
     \unfoldRepeats
     <<
