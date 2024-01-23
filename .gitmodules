@@ -1,3 +1,3 @@
-[submodule "templates"]
-	path = templates
+[submodule "lilypond-templates"]
+	path = lilypond-templates
 	url = git@github.com:sbwest/templates.git
