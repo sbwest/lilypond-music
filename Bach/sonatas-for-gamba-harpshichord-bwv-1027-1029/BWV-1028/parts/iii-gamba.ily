@@ -1,7 +1,7 @@
 \version "2.24.2"
 gambaThirdMov = \relative c {
   \noTupletBracket
-  \clef tenor 
+  \clef alto 
   fis8 
   | b8. d16 cis8 b b32( cis d16) cis8 g8.\upprall fis16 e8 d\trill cis16 b b'8 ~
   | b8 a16 gis a8 ~ a \slurDashed gis32( fis eis16) fis8 ~ fis16 d' \slurSolid cis( b) cis( d) \slurDashed eis,( fis gis b a gis) 

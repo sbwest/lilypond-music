@@ -1,6 +1,6 @@
 \version "2.24.2"
 gambaFirstMov = \relative c' {
-  \clef tenor
+  \clef alto
   | d4 r8 a8 b8.\trill( cis32 d) 
   | \appoggiatura g,8 fis8\trill( e16 d) d'2 ~
   | d4 ~ d16 cis( d fis e d cis d) 

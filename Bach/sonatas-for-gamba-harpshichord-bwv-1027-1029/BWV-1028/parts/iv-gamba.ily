@@ -1,6 +1,6 @@
 \version "2.24.2"
 gambaFourthMov = \relative c' {
-  \clef tenor 
+  \clef alto 
   | a8 d e fis4 r8
   | a,8 e' fis g4 r8
   | \repeat unfold 2 { d16 e fis g e fis }
@@ -104,7 +104,7 @@ gambaFourthMov = \relative c' {
   | e,4 r8 r8 e'' e, 
   | e, e'' e, gis, gis' gis, 
   | c, c' f dis e e, 
-  | a \clef tenor e'16 fis e8 e8 cis'16 b a cis 
+  | a \clef alto e'16 fis e8 e8 cis'16 b a cis 
   | b8 e,16 fis e8 e d'16 cis b d 
   | cis16 e cis a g fis( g) e' cis a g fis( 
   | g) a a cis cis e e g32( fis g16) e cis a 
@@ -122,7 +122,7 @@ gambaFourthMov = \relative c' {
   | d,8 a' b\trill c4 r8 
   | g16 a b c a b g a b c a b 
   | g a b a g fis e8 r r 
-  | \clef tenor r8 a16 b a8 a fis'16 e d fis 
+  | \clef alto r8 a16 b a8 a fis'16 e d fis 
   | e8 a,16 b a8 a g'16 fis e g 
   | fis16 g a b g a fis g a b g a 
   | fis g a g a b e, fis g fis g a 

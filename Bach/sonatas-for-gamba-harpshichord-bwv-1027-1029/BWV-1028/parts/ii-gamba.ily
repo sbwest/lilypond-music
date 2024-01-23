@@ -1,6 +1,6 @@
 \version "2.24.2"
 gambaSecondMov = \relative c' {
-  \clef tenor 
+  \clef alto 
   \repeat volta 2 {
     | d16 e fis4 \slurDashed e16( d)
     | cis16 d e4 \slurSolid d16( cis) 
