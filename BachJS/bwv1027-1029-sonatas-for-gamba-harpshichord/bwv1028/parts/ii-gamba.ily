@@ -37,6 +37,8 @@ gambaSecondMov = \relative c' {
     \volta 1 { | a2 }
     \volta 2 { | a2 \bar "||" }
   }
+  \break
+  \allowPageTurn
   \repeat volta 2 {
     | R2 * 4
     | a16 b c4 b16( a)
