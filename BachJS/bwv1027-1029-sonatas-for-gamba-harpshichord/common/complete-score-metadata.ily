@@ -84,9 +84,9 @@ harpsichordName = \markup \pagella "Harpsichord"
 %% Filenames
 fileName = "bwv1027-1029-sonatas-for-gamba-harpsichord"
 
-sonataOneFileName = "bwv1027-sonata-for-gamba-harpsichord"
-sonataTwoFileName = "bwv1028-sonata-for-gamba-harpsichord"
-sonataThreeFileName = "bwv1029-sonata-for-gamba-harpsichord"
+sonataOneFileName = "bwv1027-sonata-for-gamba-harpsichord-g-major"
+sonataTwoFileName = "bwv1028-sonata-for-gamba-harpsichord-d-major"
+sonataThreeFileName = "bwv1029-sonata-for-gamba-harpsichord-g-minor"
 %% Movement Titles
 % header[N] variables for each movement title or number of work. To be placed in the 'piece' element of a \header block
 
