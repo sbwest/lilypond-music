@@ -34,26 +34,7 @@ sonataOneScoreBreaksI = {
   s2. s \break
   | s2. \appoggiatura s8 s2. \noBreak
   | s2. \appoggiatura s8 s2. \break
-  | s1. \noBreak
-  | s1. 
-  | s1. \noBreak
-  | s1. 
-  | s1. \noBreak
-  | s1. 
-  | s1. \noBreak
-  | s1. 
-  | s1. \noBreak
-  | s1. 
-  | s1. \noBreak
-  | s1. 
-  | s1. \noBreak
-  | s1. 
-  | s1. \noBreak
-  | s1. 
-  | s1. \noBreak
-  | s1. 
-  | s1. \noBreak
-  | s1. 
+  \repeat unfold 10 { | s1. \noBreak | s1. }
   | s1. \noBreak
   | s1. \break
   | s1. \noBreak
@@ -249,6 +230,7 @@ sonataTwoScoreBreaksIII = {
         indent = 1\in
       }
     }
+    \pageBreak
     \tocItem sonataTwo.II \markup "2. Allegro"
     \score {
       <<
