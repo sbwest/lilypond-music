@@ -4,9 +4,9 @@
 
 \include "./common/score-includes.ily"
 
-sonataOneFileName = "BWV-1027"
-sonataTwoFileName = "BWV-1028"
-sonataThreeFileName = "BWV-1029"
+sonataOneFileName = "bwv1027-sonata-for-gamba-harpsichord"
+sonataTwoFileName = "bwv1028-sonata-for-gamba-harpsichord"
+sonataThreeFileName = "bwv1029-sonata-for-gamba-harpsichord"
 
 % MIDI
 % Sonata BWV 1027
@@ -36,7 +36,7 @@ sonataThreeFileName = "BWV-1029"
           }
       >>
     >>
-    \include "./BWV-1027/parts/i-midi.ily"
+    \include "./bwv1027/parts/i-midi.ily"
   } 
 }
 \book {
@@ -66,7 +66,7 @@ sonataThreeFileName = "BWV-1029"
           }
       >>
     >>
-    \include "./BWV-1027/parts/ii-midi.ily"
+    \include "./bwv1027/parts/ii-midi.ily"
   }
 }
 \book {
@@ -96,7 +96,7 @@ sonataThreeFileName = "BWV-1029"
           }
       >>
     >>
-    \include "./BWV-1027/parts/iii-midi.ily"
+    \include "./bwv1027/parts/iii-midi.ily"
   } 
 }
 \book {
@@ -126,7 +126,7 @@ sonataThreeFileName = "BWV-1029"
           }
       >>
     >>
-    \include "./BWV-1027/parts/iv-midi.ily"
+    \include "./bwv1027/parts/iv-midi.ily"
   }     
 }
 
@@ -157,7 +157,7 @@ sonataThreeFileName = "BWV-1029"
           }
       >>
     >>
-    \include "./BWV-1028/parts/i-midi.ily"
+    \include "./bwv1028/parts/i-midi.ily"
   } 
 }
 \book {
@@ -187,7 +187,7 @@ sonataThreeFileName = "BWV-1029"
           }
       >>
     >>
-    \include "./BWV-1028/parts/ii-midi.ily"
+    \include "./bwv1028/parts/ii-midi.ily"
   }
 }
 \book {
@@ -217,7 +217,7 @@ sonataThreeFileName = "BWV-1029"
           }
       >>
     >>
-    \include "./BWV-1028/parts/iii-midi.ily"
+    \include "./bwv1028/parts/iii-midi.ily"
   } 
 }
 \book {
@@ -247,7 +247,7 @@ sonataThreeFileName = "BWV-1029"
           }
       >>
     >>
-    \include "./BWV-1028/parts/iv-midi.ily"
+    \include "./bwv1028/parts/iv-midi.ily"
   }     
 }
 
@@ -278,7 +278,7 @@ sonataThreeFileName = "BWV-1029"
           }
       >>
     >>
-    \include "./BWV-1029/parts/i-midi.ily"
+    \include "./bwv1029/parts/i-midi.ily"
   } 
 }
 \book {
@@ -308,7 +308,7 @@ sonataThreeFileName = "BWV-1029"
           }
       >>
     >>
-    \include "./BWV-1029/parts/ii-midi.ily"
+    \include "./bwv1029/parts/ii-midi.ily"
   }
 }
 \book {
@@ -338,6 +338,6 @@ sonataThreeFileName = "BWV-1029"
           }
       >>
     >>
-    \include "./BWV-1029/parts/iii-midi.ily"
+    \include "./bwv1029/parts/iii-midi.ily"
   } 
 }
