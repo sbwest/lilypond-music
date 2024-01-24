@@ -1,6 +1,6 @@
 \version "2.24.2"
 
-cembaloRThirdMov = \relative c'' {
+harpsichordRThirdMov = \relative c'' {
   \clef treble
   \noTupletBracket
   r8 d d d d d 

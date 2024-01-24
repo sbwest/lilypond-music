@@ -65,7 +65,7 @@ globalSettings = {
 %%%%%
 % Instrument names
 gambaName = \markup \pagella "Viola da gamba"
-cembaloName = \markup \pagella "Harpsichord"
+harpsichordName = \markup \pagella "Harpsichord"
 
 %%%%%
 %% Filename

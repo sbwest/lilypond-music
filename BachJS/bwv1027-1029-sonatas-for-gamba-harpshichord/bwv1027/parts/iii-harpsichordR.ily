@@ -1,6 +1,6 @@
 \version "2.24.2"
 
-cembaloRThirdMov = \relative c'' {
+harpsichordRThirdMov = \relative c'' {
   \clef treble
   | b16( dis e g) b,( dis e g) c,( b c e) c( b c e)
   | \repeat unfold 2 { a,( c dis fis) } g,( fis g b) g( fis g b)

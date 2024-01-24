@@ -1,6 +1,6 @@
 \version "2.24.2"
 
-cembaloLThirdMov = \relative c {
+harpsichordLThirdMov = \relative c {
   \clef bass
   r8
   | b8 b' a g fis e ais4. b8 cis d 
@@ -34,7 +34,7 @@ cembaloLThirdMov = \relative c {
   | a8 fis g! gis b ais b d, fis b,4\fermata \bar "|."
 }
 
-cembaloLThirdMovFigures = \figuremode {
+harpsichordLThirdMovFigures = \figuremode {
   \bassFigureExtendersOff
   \bassFigureStaffAlignmentUp
   \set figuredBassAlterationDirection = #RIGHT

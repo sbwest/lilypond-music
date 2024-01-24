@@ -1,5 +1,5 @@
 \version "2.24.2"
-cembaloLFirstMov = \relative c' {
+harpsichordLFirstMov = \relative c' {
   \clef bass
   g16 a 
   | bes8 g g, g'16 a bes8 g g, g'16 a 
@@ -117,7 +117,7 @@ cembaloLFirstMov = \relative c' {
   | c,8 c' d d, g4. \bar "|."
 }
 
-cembaloLFirstMovFigures = \figuremode {
+harpsichordLFirstMovFigures = \figuremode {
   \bassFigureExtendersOff
   \bassFigureStaffAlignmentUp
   \set figuredBassAlterationDirection = #RIGHT

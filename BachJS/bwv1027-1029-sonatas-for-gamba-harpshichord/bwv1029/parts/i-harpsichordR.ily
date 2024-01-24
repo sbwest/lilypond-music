@@ -1,5 +1,5 @@
 \version "2.24.2"
-cembaloRFirstMov = \relative c'' {
+harpsichordRFirstMov = \relative c'' {
   \clef treble
   r8
   | R1 * 7

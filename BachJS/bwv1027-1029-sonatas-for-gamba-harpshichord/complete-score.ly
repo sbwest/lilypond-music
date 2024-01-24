@@ -56,16 +56,16 @@
           \sonataOneGlobalFirstMov
           \sonataOneGambaFirstMov
         >>
-        \new PianoStaff = "cembalo"
-        \with { instrumentName = \cembaloName }
+        \new PianoStaff = "harpsichord"
+        \with { instrumentName = \harpsichordName }
         <<
           \new Staff = "right" {
             \sonataOneGlobalFirstMov
-            \sonataOneCembaloRFirstMov
+            \sonataOneHarpsichordRFirstMov
           }
           \new Staff = "left" {
             \sonataOneGlobalFirstMov
-            \sonataOneCembaloLFirstMov
+            \sonataOneHarpsichordLFirstMov
           }
         >>
       >>
@@ -89,15 +89,15 @@
 
           % \new Voice = "scoreBreaks" { \scoreBreaksII }
         >>
-        \new PianoStaff = "cembalo"
+        \new PianoStaff = "harpsichord"
         <<
           \new Staff = "right" {
             \sonataOneGlobalSecondMov
-            \sonataOneCembaloRSecondMov
+            \sonataOneHarpsichordRSecondMov
           }
           \new Staff = "left" {
             \sonataOneGlobalSecondMov
-            \sonataOneCembaloLSecondMov
+            \sonataOneHarpsichordLSecondMov
           }
         >>
       >>
@@ -123,15 +123,15 @@
           \sonataOneGambaThirdMov
 
         >>
-        \new PianoStaff = "cembalo"
+        \new PianoStaff = "harpsichord"
         <<
           \new Staff = "right" {
             \sonataOneGlobalThirdMov
-            \sonataOneCembaloRThirdMov
+            \sonataOneHarpsichordRThirdMov
           }
           \new Staff = "left" {
             \sonataOneGlobalThirdMov
-            \sonataOneCembaloLThirdMov
+            \sonataOneHarpsichordLThirdMov
           }
         >>
       >>
@@ -155,15 +155,15 @@
 
           % \new Voice = "scoreBreaks" { \scoreBreaksIV }
         >>
-        \new PianoStaff = "cembalo"
+        \new PianoStaff = "harpsichord"
         <<
           \new Staff = "right" {
             \sonataOneGlobalFourthMov
-            \sonataOneCembaloRFourthMov
+            \sonataOneHarpsichordRFourthMov
           }
           \new Staff = "left" {
             \sonataOneGlobalFourthMov
-            \sonataOneCembaloLFourthMov
+            \sonataOneHarpsichordLFourthMov
           }
         >>
       >>
@@ -197,16 +197,16 @@
           \sonataTwoGlobalFirstMov
           \sonataTwoGambaFirstMov
         >>
-        \new PianoStaff = "cembalo"
-        \with { instrumentName = \cembaloName }
+        \new PianoStaff = "harpsichord"
+        \with { instrumentName = \harpsichordName }
         <<
           \new Staff = "right" {
             \sonataTwoGlobalFirstMov
-            \sonataTwoCembaloRFirstMov
+            \sonataTwoHarpsichordRFirstMov
           }
           \new Staff = "left" {
             \sonataTwoGlobalFirstMov
-            \sonataTwoCembaloLFirstMov
+            \sonataTwoHarpsichordLFirstMov
           }
         >>
       >>
@@ -228,15 +228,15 @@
 
           % \new Voice = "scoreBreaks" { \scoreBreaksII }
         >>
-        \new PianoStaff = "cembalo"
+        \new PianoStaff = "harpsichord"
         <<
           \new Staff = "right" {
             \sonataTwoGlobalSecondMov
-            \sonataTwoCembaloRSecondMov
+            \sonataTwoHarpsichordRSecondMov
           }
           \new Staff = "left" {
             \sonataTwoGlobalSecondMov
-            \sonataTwoCembaloLSecondMov
+            \sonataTwoHarpsichordLSecondMov
           }
         >>
       >>
@@ -263,15 +263,15 @@
 
           % \new Voice = "scoreBreaks" { \scoreBreaksIII }
         >>
-        \new PianoStaff = "cembalo"
+        \new PianoStaff = "harpsichord"
         <<
           \new Staff = "right" {
             \sonataTwoGlobalThirdMov
-            \sonataTwoCembaloRThirdMov
+            \sonataTwoHarpsichordRThirdMov
           }
           \new Staff = "left" {
             \sonataTwoGlobalThirdMov
-            \sonataTwoCembaloLThirdMov
+            \sonataTwoHarpsichordLThirdMov
           }
         >>
       >>
@@ -298,15 +298,15 @@
 
           % \new Voice = "scoreBreaks" { \scoreBreaksIV }
         >>
-        \new PianoStaff = "cembalo"
+        \new PianoStaff = "harpsichord"
         <<
           \new Staff = "right" {
             \sonataTwoGlobalFourthMov
-            \sonataTwoCembaloRFourthMov
+            \sonataTwoHarpsichordRFourthMov
           }
           \new Staff = "left" {
             \sonataTwoGlobalFourthMov
-            \sonataTwoCembaloLFourthMov
+            \sonataTwoHarpsichordLFourthMov
           }
         >>
       >>
@@ -339,16 +339,16 @@
           \sonataThreeGlobalFirstMov
           \sonataThreeGambaFirstMov
         >>
-        \new PianoStaff = "cembalo"
-        \with { instrumentName = \cembaloName }
+        \new PianoStaff = "harpsichord"
+        \with { instrumentName = \harpsichordName }
         <<
           \new Staff = "right" {
             \sonataThreeGlobalFirstMov
-            \sonataThreeCembaloRFirstMov
+            \sonataThreeHarpsichordRFirstMov
           }
           \new Staff = "left" {
             \sonataThreeGlobalFirstMov
-            \sonataThreeCembaloLFirstMov
+            \sonataThreeHarpsichordLFirstMov
           }
         >>
       >>
@@ -371,15 +371,15 @@
 
           % \new Voice = "scoreBreaks" { \scoreBreaksII }
         >>
-        \new PianoStaff = "cembalo"
+        \new PianoStaff = "harpsichord"
         <<
           \new Staff = "right" {
             \sonataThreeGlobalSecondMov
-            \sonataThreeCembaloRSecondMov
+            \sonataThreeHarpsichordRSecondMov
           }
           \new Staff = "left" {
             \sonataThreeGlobalSecondMov
-            \sonataThreeCembaloLSecondMov
+            \sonataThreeHarpsichordLSecondMov
           }
         >>
       >>
@@ -401,15 +401,15 @@
           \sonataThreeGlobalThirdMov
           \sonataThreeGambaThirdMov
         >>
-        \new PianoStaff = "cembalo"
+        \new PianoStaff = "harpsichord"
         <<
           \new Staff = "right" {
             \sonataThreeGlobalThirdMov
-            \sonataThreeCembaloRThirdMov
+            \sonataThreeHarpsichordRThirdMov
           }
           \new Staff = "left" {
             \sonataThreeGlobalThirdMov
-            \sonataThreeCembaloLThirdMov
+            \sonataThreeHarpsichordLThirdMov
           }
         >>
       >>

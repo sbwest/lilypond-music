@@ -22,17 +22,17 @@ sonataThreeFileName = "bwv1029-sonata-for-gamba-harpsichord"
         \sonataOneGlobalFirstMov
         \sonataOneGambaFirstMov
       >>
-      \new PianoStaff = "cembalo"
+      \new PianoStaff = "harpsichord"
       <<
           \new Staff = "right" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataOneGlobalFirstMov
-            \sonataOneCembaloRFirstMov
+            \sonataOneHarpsichordRFirstMov
           }
           \new Staff = "left" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataOneGlobalFirstMov
-            \sonataOneCembaloLFirstMov
+            \sonataOneHarpsichordLFirstMov
           }
       >>
     >>
@@ -52,17 +52,17 @@ sonataThreeFileName = "bwv1029-sonata-for-gamba-harpsichord"
         \sonataOneGlobalSecondMov
         \sonataOneGambaSecondMov
       >>
-      \new PianoStaff = "cembalo"
+      \new PianoStaff = "harpsichord"
       <<
           \new Staff = "right" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataOneGlobalSecondMov
-            \sonataOneCembaloRSecondMov
+            \sonataOneHarpsichordRSecondMov
           }
           \new Staff = "left" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataOneGlobalSecondMov
-            \sonataOneCembaloLSecondMov
+            \sonataOneHarpsichordLSecondMov
           }
       >>
     >>
@@ -82,17 +82,17 @@ sonataThreeFileName = "bwv1029-sonata-for-gamba-harpsichord"
         \sonataOneGlobalThirdMov
         \sonataOneGambaThirdMov
       >>
-      \new PianoStaff = "cembalo"
+      \new PianoStaff = "harpsichord"
       <<
           \new Staff = "right" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataOneGlobalThirdMov
-            \sonataOneCembaloRThirdMov
+            \sonataOneHarpsichordRThirdMov
           }
           \new Staff = "left" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataOneGlobalThirdMov
-            \sonataOneCembaloLThirdMov
+            \sonataOneHarpsichordLThirdMov
           }
       >>
     >>
@@ -112,17 +112,17 @@ sonataThreeFileName = "bwv1029-sonata-for-gamba-harpsichord"
         \sonataOneGlobalFourthMov
         \sonataOneGambaFourthMov
       >>
-      \new PianoStaff = "cembalo"
+      \new PianoStaff = "harpsichord"
       <<
           \new Staff = "right" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataOneGlobalFourthMov
-            \sonataOneCembaloRFourthMov
+            \sonataOneHarpsichordRFourthMov
           }
           \new Staff = "left" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataOneGlobalFourthMov
-            \sonataOneCembaloLFourthMov
+            \sonataOneHarpsichordLFourthMov
           }
       >>
     >>
@@ -143,17 +143,17 @@ sonataThreeFileName = "bwv1029-sonata-for-gamba-harpsichord"
         \sonataTwoGlobalFirstMov
         \sonataTwoGambaFirstMov
       >>
-      \new PianoStaff = "cembalo"
+      \new PianoStaff = "harpsichord"
       <<
           \new Staff = "right" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataTwoGlobalFirstMov
-            \sonataTwoCembaloRFirstMov
+            \sonataTwoHarpsichordRFirstMov
           }
           \new Staff = "left" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataTwoGlobalFirstMov
-            \sonataTwoCembaloLFirstMov
+            \sonataTwoHarpsichordLFirstMov
           }
       >>
     >>
@@ -173,17 +173,17 @@ sonataThreeFileName = "bwv1029-sonata-for-gamba-harpsichord"
         \sonataTwoGlobalSecondMov
         \sonataTwoGambaSecondMov
       >>
-      \new PianoStaff = "cembalo"
+      \new PianoStaff = "harpsichord"
       <<
           \new Staff = "right" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataTwoGlobalSecondMov
-            \sonataTwoCembaloRSecondMov
+            \sonataTwoHarpsichordRSecondMov
           }
           \new Staff = "left" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataTwoGlobalSecondMov
-            \sonataTwoCembaloLSecondMov
+            \sonataTwoHarpsichordLSecondMov
           }
       >>
     >>
@@ -203,17 +203,17 @@ sonataThreeFileName = "bwv1029-sonata-for-gamba-harpsichord"
         \sonataTwoGlobalThirdMov
         \sonataTwoGambaThirdMov
       >>
-      \new PianoStaff = "cembalo"
+      \new PianoStaff = "harpsichord"
       <<
           \new Staff = "right" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataTwoGlobalThirdMov
-            \sonataTwoCembaloRThirdMov
+            \sonataTwoHarpsichordRThirdMov
           }
           \new Staff = "left" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataTwoGlobalThirdMov
-            \sonataTwoCembaloLThirdMov
+            \sonataTwoHarpsichordLThirdMov
           }
       >>
     >>
@@ -233,17 +233,17 @@ sonataThreeFileName = "bwv1029-sonata-for-gamba-harpsichord"
         \sonataTwoGlobalFourthMov
         \sonataTwoGambaFourthMov
       >>
-      \new PianoStaff = "cembalo"
+      \new PianoStaff = "harpsichord"
       <<
           \new Staff = "right" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataTwoGlobalFourthMov
-            \sonataTwoCembaloRFourthMov
+            \sonataTwoHarpsichordRFourthMov
           }
           \new Staff = "left" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataTwoGlobalFourthMov
-            \sonataTwoCembaloLFourthMov
+            \sonataTwoHarpsichordLFourthMov
           }
       >>
     >>
@@ -264,17 +264,17 @@ sonataThreeFileName = "bwv1029-sonata-for-gamba-harpsichord"
         \sonataThreeGlobalFirstMov
         \sonataThreeGambaFirstMov
       >>
-      \new PianoStaff = "cembalo"
+      \new PianoStaff = "harpsichord"
       <<
           \new Staff = "right" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataThreeGlobalFirstMov
-            \sonataThreeCembaloRFirstMov
+            \sonataThreeHarpsichordRFirstMov
           }
           \new Staff = "left" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataThreeGlobalFirstMov
-            \sonataThreeCembaloLFirstMov
+            \sonataThreeHarpsichordLFirstMov
           }
       >>
     >>
@@ -294,17 +294,17 @@ sonataThreeFileName = "bwv1029-sonata-for-gamba-harpsichord"
         \sonataThreeGlobalSecondMov
         \sonataThreeGambaSecondMov
       >>
-      \new PianoStaff = "cembalo"
+      \new PianoStaff = "harpsichord"
       <<
           \new Staff = "right" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataThreeGlobalSecondMov
-            \sonataThreeCembaloRSecondMov
+            \sonataThreeHarpsichordRSecondMov
           }
           \new Staff = "left" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataThreeGlobalSecondMov
-            \sonataThreeCembaloLSecondMov
+            \sonataThreeHarpsichordLSecondMov
           }
       >>
     >>
@@ -324,17 +324,17 @@ sonataThreeFileName = "bwv1029-sonata-for-gamba-harpsichord"
         \sonataThreeGlobalThirdMov
         \sonataThreeGambaThirdMov
       >>
-      \new PianoStaff = "cembalo"
+      \new PianoStaff = "harpsichord"
       <<
           \new Staff = "right" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataThreeGlobalThirdMov
-            \sonataThreeCembaloRThirdMov
+            \sonataThreeHarpsichordRThirdMov
           }
           \new Staff = "left" {
             \set Staff.midiInstrument = "harpsichord"
             \sonataThreeGlobalThirdMov
-            \sonataThreeCembaloLThirdMov
+            \sonataThreeHarpsichordLThirdMov
           }
       >>
     >>

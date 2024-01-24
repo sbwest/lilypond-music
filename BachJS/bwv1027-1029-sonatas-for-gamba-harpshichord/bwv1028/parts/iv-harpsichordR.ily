@@ -1,6 +1,6 @@
 \version "2.24.2"
 
-cembaloRFourthMov = \relative c'' {
+harpsichordRFourthMov = \relative c'' {
   \clef treble
   | r8 a16 b a8 a fis'16 e d fis 
   | e8 a,16 b a8 a g'16 fis e g 

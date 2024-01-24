@@ -51,20 +51,20 @@
         
         % \new Voice = "scoreBreaks" { \scoreBreaksI }
       >>
-      \new PianoStaff = "cembalo"
-      \with { instrumentName = \cembaloName }
+      \new PianoStaff = "harpsichord"
+      \with { instrumentName = \harpsichordName }
       <<
           \new Staff = "right" {
             \globalFirstMov
-            \cembaloRFirstMov
+            \harpsichordRFirstMov
           }
           \new Staff = "left" {
             \globalFirstMov
-            \cembaloLFirstMovFigures
+            \harpsichordLFirstMovFigures
           }
           \context Staff = "left" { 
             \globalFirstMov
-            \cembaloLFirstMov
+            \harpsichordLFirstMov
           }
       >>
     >>
@@ -89,15 +89,15 @@
         
         % \new Voice = "scoreBreaks" { \scoreBreaksII }
       >>
-      \new PianoStaff = "cembalo"
+      \new PianoStaff = "harpsichord"
       <<
           \new Staff = "right" {
             \globalSecondMov
-            \cembaloRSecondMov
+            \harpsichordRSecondMov
           }
           \new Staff = "left" {
             \globalSecondMov
-            \cembaloLSecondMov
+            \harpsichordLSecondMov
           }
       >>
     >>
@@ -123,22 +123,22 @@
         
         % \new Voice = "scoreBreaks" { \scoreBreaksIII }
       >>
-      \new PianoStaff = "cembalo"
+      \new PianoStaff = "harpsichord"
       <<
           \new Staff = "right" {
             \globalThirdMov
-            \cembaloRThirdMov
+            \harpsichordRThirdMov
           }
           % \new FiguredBass {
-          %   \cembaloLThirdMovFigures
+          %   \harpsichordLThirdMovFigures
           % }
           \new Staff = "left" {
             \globalThirdMov
-            \cembaloLThirdMovFigures
+            \harpsichordLThirdMovFigures
           }
           \context Staff = "left" { 
             \globalThirdMov
-            \cembaloLThirdMov
+            \harpsichordLThirdMov
           }
           
       >>

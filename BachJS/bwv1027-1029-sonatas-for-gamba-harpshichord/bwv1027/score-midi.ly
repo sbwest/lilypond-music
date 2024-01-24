@@ -18,17 +18,17 @@
         \globalFirstMov
         \gambaFirstMov
       >>
-      \new PianoStaff = "cembalo"
+      \new PianoStaff = "harpsichord"
       <<
           \new Staff = "right" {
             \set Staff.midiInstrument = "harpsichord"
             \globalFirstMov
-            \cembaloRFirstMov
+            \harpsichordRFirstMov
           }
           \new Staff = "left" {
             \set Staff.midiInstrument = "harpsichord"
             \globalFirstMov
-            \cembaloLFirstMov
+            \harpsichordLFirstMov
           }
       >>
     >>
@@ -48,17 +48,17 @@
         \globalSecondMov
         \gambaSecondMov
       >>
-      \new PianoStaff = "cembalo"
+      \new PianoStaff = "harpsichord"
       <<
           \new Staff = "right" {
             \set Staff.midiInstrument = "harpsichord"
             \globalSecondMov
-            \cembaloRSecondMov
+            \harpsichordRSecondMov
           }
           \new Staff = "left" {
             \set Staff.midiInstrument = "harpsichord"
             \globalSecondMov
-            \cembaloLSecondMov
+            \harpsichordLSecondMov
           }
       >>
     >>
@@ -78,17 +78,17 @@
         \globalThirdMov
         \gambaThirdMov
       >>
-      \new PianoStaff = "cembalo"
+      \new PianoStaff = "harpsichord"
       <<
           \new Staff = "right" {
             \set Staff.midiInstrument = "harpsichord"
             \globalThirdMov
-            \cembaloRThirdMov
+            \harpsichordRThirdMov
           }
           \new Staff = "left" {
             \set Staff.midiInstrument = "harpsichord"
             \globalThirdMov
-            \cembaloLThirdMov
+            \harpsichordLThirdMov
           }
       >>
     >>
@@ -108,17 +108,17 @@
         \globalFourthMov
         \gambaFourthMov
       >>
-      \new PianoStaff = "cembalo"
+      \new PianoStaff = "harpsichord"
       <<
           \new Staff = "right" {
             \set Staff.midiInstrument = "harpsichord"
             \globalFourthMov
-            \cembaloRFourthMov
+            \harpsichordRFourthMov
           }
           \new Staff = "left" {
             \set Staff.midiInstrument = "harpsichord"
             \globalFourthMov
-            \cembaloLFourthMov
+            \harpsichordLFourthMov
           }
       >>
     >>

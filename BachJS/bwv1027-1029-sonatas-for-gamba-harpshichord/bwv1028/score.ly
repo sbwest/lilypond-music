@@ -58,16 +58,16 @@ scoreBreaksIII = {
         
         \new Voice = "scoreBreaks" { \scoreBreaksI }
       >>
-      \new PianoStaff = "cembalo"
-      \with { instrumentName = \cembaloName }
+      \new PianoStaff = "harpsichord"
+      \with { instrumentName = \harpsichordName }
       <<
           \new Staff = "right" {
             \globalFirstMov
-            \cembaloRFirstMov
+            \harpsichordRFirstMov
           }
           \new Staff = "left" {
             \globalFirstMov
-            \cembaloLFirstMov
+            \harpsichordLFirstMov
           }
       >>
     >>
@@ -92,15 +92,15 @@ scoreBreaksIII = {
         
         % \new Voice = "scoreBreaks" { \scoreBreaksII }
       >>
-      \new PianoStaff = "cembalo"
+      \new PianoStaff = "harpsichord"
       <<
           \new Staff = "right" {
             \globalSecondMov
-            \cembaloRSecondMov
+            \harpsichordRSecondMov
           }
           \new Staff = "left" {
             \globalSecondMov
-            \cembaloLSecondMov
+            \harpsichordLSecondMov
           }
       >>
     >>
@@ -128,22 +128,22 @@ scoreBreaksIII = {
         
         \new Voice = "scoreBreaks" { \scoreBreaksIII }
       >>
-      \new PianoStaff = "cembalo"
+      \new PianoStaff = "harpsichord"
       <<
           \new Staff = "right" {
             \globalThirdMov
-            \cembaloRThirdMov
+            \harpsichordRThirdMov
           }
           % \new FiguredBass {
-          %   \cembaloLThirdMovFigures
+          %   \harpsichordLThirdMovFigures
           % }
           \new Staff = "left" {
             \globalThirdMov
-            \cembaloLThirdMovFigures
+            \harpsichordLThirdMovFigures
           }
           \context Staff = "left" { 
             \globalThirdMov
-            \cembaloLThirdMov
+            \harpsichordLThirdMov
           }
           
       >>
@@ -172,15 +172,15 @@ scoreBreaksIII = {
         
         % \new Voice = "scoreBreaks" { \scoreBreaksIV }
       >>
-      \new PianoStaff = "cembalo"
+      \new PianoStaff = "harpsichord"
       <<
           \new Staff = "right" {
             \globalFourthMov
-            \cembaloRFourthMov
+            \harpsichordRFourthMov
           }
           \new Staff = "left" {
             \globalFourthMov
-            \cembaloLFourthMov
+            \harpsichordLFourthMov
           }
       >>
     >>

@@ -1,6 +1,6 @@
 \version "2.24.2"
 
-cembaloLFourthMov = \relative c {
+harpsichordLFourthMov = \relative c {
   \clef bass
   r4 
   | r g8 a b4 d 

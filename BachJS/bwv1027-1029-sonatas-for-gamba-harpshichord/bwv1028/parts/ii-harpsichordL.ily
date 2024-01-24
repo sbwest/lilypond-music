@@ -1,6 +1,6 @@
 \version "2.24.2"
 
-cembaloLSecondMov = \relative c' {
+harpsichordLSecondMov = \relative c' {
   \clef bass
   \repeat volta 2 {
     | d8. a32 g fis g a16 d,8  

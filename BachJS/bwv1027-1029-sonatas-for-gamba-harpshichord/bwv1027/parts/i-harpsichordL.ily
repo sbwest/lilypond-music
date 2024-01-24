@@ -1,5 +1,5 @@
 \version "2.24.2"
-cembaloLFirstMov = \relative c {
+harpsichordLFirstMov = \relative c {
   \clef bass
   | g8 b d g b d g, b, d g, b g
   | d'8 c' c b16( a) c( b) a( g) c8 a e fis g e

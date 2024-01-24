@@ -1,6 +1,6 @@
 \version "2.24.2"
 
-cembaloRSecondMov = \relative c'' {
+harpsichordRSecondMov = \relative c'' {
   \clef treble
   \repeat volta 2 {
     | fis16 g a4 g16 fis 

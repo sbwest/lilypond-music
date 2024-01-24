@@ -1,6 +1,6 @@
 \version "2.24.2"
 
-cembaloLThirdMov = \relative c, {
+harpsichordLThirdMov = \relative c, {
   \clef bass
   | e'8[ e,] e' e, e'[ e,] e' e, 
   | e'8[ e,] e' e, e'[ e,] e' e, 

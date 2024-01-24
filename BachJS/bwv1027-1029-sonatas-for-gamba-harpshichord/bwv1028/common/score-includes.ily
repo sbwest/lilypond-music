@@ -4,23 +4,23 @@
 %% First movement
 \include "../parts/i-global.ily"
 \include "../parts/i-gamba.ily"
-\include "../parts/i-cembaloR.ily"
-\include "../parts/i-cembaloL.ily"
+\include "../parts/i-harpsichordR.ily"
+\include "../parts/i-harpsichordL.ily"
 
 %% Second movement
 \include "../parts/ii-global.ily"
 \include "../parts/ii-gamba.ily"
-\include "../parts/ii-cembaloR.ily"
-\include "../parts/ii-cembaloL.ily"
+\include "../parts/ii-harpsichordR.ily"
+\include "../parts/ii-harpsichordL.ily"
 
 %% Third movement
 \include "../parts/iii-global.ily"
 \include "../parts/iii-gamba.ily"
-\include "../parts/iii-cembaloR.ily"
-\include "../parts/iii-cembaloL.ily"
+\include "../parts/iii-harpsichordR.ily"
+\include "../parts/iii-harpsichordL.ily"
 
 %% Fourth movement
 \include "../parts/iv-global.ily"
 \include "../parts/iv-gamba.ily"
-\include "../parts/iv-cembaloR.ily"
-\include "../parts/iv-cembaloL.ily"
+\include "../parts/iv-harpsichordR.ily"
+\include "../parts/iv-harpsichordL.ily"
