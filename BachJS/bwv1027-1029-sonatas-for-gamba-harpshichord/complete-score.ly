@@ -27,7 +27,6 @@
 \book {
   % Specify output filename
   \bookOutputName \fileName
-  \bookOutputSuffix "score"
   \header {
     composer = ##f
     opus = ##f
