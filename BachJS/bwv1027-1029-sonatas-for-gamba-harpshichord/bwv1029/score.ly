@@ -3,16 +3,25 @@
 \include "./common/metadata.ily"
 
 \paper {
-  % systems-per-page = 5
-  % output-suffix = "score"
+  % Specify page breaking engine
+  page-breaking = #ly:optimal-breaking
+  page-spacing-weight = #20
+  first-page-number = 2
 }
 
+%% Layout settings
 \layout {
   #(layout-set-staff-size 16)
   \context {
     \Score
+    % Increase bar number size
     \override BarNumber.font-size = #1
-    % \override BarNumber.padding = #3
+    % Place bar numbers inside box 
+    \override BarNumber.stencil = #(make-stencil-boxer 0.1 0.25 ly:text-interface::print)
+    % Set bar number font
+    \override BarNumber.font-name = \customRomanFont
+    % Hide extender lines from text dynamics like 'cresc'
+    \override DynamicTextSpanner.style = #'none 
   }
   \context {
     \Voice
@@ -23,18 +32,6 @@
 
 \include "./common/score-includes.ily"
 
-% Set any global overrides for the score for each movement (overrides[N])
-% overridesI = { }
-% overridesII = { }
-% overridesIII = { }
-% overridesIV = { }
-
-% Set line breaks for score (only inserted into first instrument part)
-% scoreBreaksI = { }
-% scoreBreaksII = { }
-% scoreBreaksIII = { }
-% scoreBreaksIV = { }
-
 % PDF
 \bookpart {
   % Specify output filename
@@ -42,14 +39,11 @@
   % Each \score block is for a movement of the piece. Only the first score block will include the instrument name.
   \score {
     <<
-      \globalSettings
       \new Staff = "gamba"
       \with { instrumentName = \gambaName}
       <<
         \globalFirstMov
         \gambaFirstMov
-        
-        % \new Voice = "scoreBreaks" { \scoreBreaksI }
       >>
       \new PianoStaff = "harpsichord"
       \with { instrumentName = \harpsichordName }
@@ -78,13 +72,10 @@
   % \pageBreak
   \score {
     <<
-      \globalSettings
       \new Staff = "gamba"
       <<
         \globalSecondMov
         \gambaSecondMov
-        
-        % \new Voice = "scoreBreaks" { \scoreBreaksII }
       >>
       \new PianoStaff = "harpsichord"
       <<
@@ -109,13 +100,10 @@
   % \pageBreak
   \score {
     <<
-      \globalSettings
       \new Staff = "gamba"
       <<
         \globalThirdMov
         \gambaThirdMov
-        
-        % \new Voice = "scoreBreaks" { \scoreBreaksIII }
       >>
       \new PianoStaff = "harpsichord"
       <<

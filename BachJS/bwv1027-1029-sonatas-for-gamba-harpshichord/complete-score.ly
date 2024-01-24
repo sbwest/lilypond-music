@@ -3,17 +3,25 @@
 \include "./common/complete-score-metadata.ily"
 
 \paper {
-  #(set-paper-size "c4") % C4 paper is closest to standard music paper (12 x 9 in.)
+  % #(set-paper-size "letter") % Set paper size (will overried size specified via command line)
   output-suffix = "score"
-  page-breaking = #ly:optimal-breaking
+  page-breaking = #ly:optimal-breaking % Set page breaking engine
+  page-spacing-weight = #20
 }
 
+%% Layout settings
 \layout {
   #(layout-set-staff-size 16)
   \context {
     \Score
+    % Increase bar number size
     \override BarNumber.font-size = #1
-    % \override BarNumber.padding = #3
+    % Place bar numbers inside box 
+    \override BarNumber.stencil = #(make-stencil-boxer 0.1 0.25 ly:text-interface::print)
+    % Set bar number font
+    \override BarNumber.font-name = \customRomanFont
+    % Hide extender lines from text dynamics like 'cresc'
+    \override DynamicTextSpanner.style = #'none 
   }
   \context {
     \Voice
@@ -86,7 +94,6 @@ sonataTwoScoreBreaksIII = {
     \tocItem sonataOne.I \markup "1. Adagio"
     \score {
       <<
-        \globalSettings
         \new Staff = "gamba"
         \with { instrumentName = \gambaName}
         <<
@@ -118,13 +125,10 @@ sonataTwoScoreBreaksIII = {
     \tocItem sonataOne.II \markup "2. Allegro ma non tanto"
     \score {
       <<
-        \globalSettings
         \new Staff = "gamba"
         <<
           \sonataOneGlobalSecondMov
           \sonataOneGambaSecondMov
-
-          % \new Voice = "scoreBreaks" { \scoreBreaksII }
         >>
         \new PianoStaff = "harpsichord"
         <<
@@ -150,7 +154,6 @@ sonataTwoScoreBreaksIII = {
     \tocItem sonataOne.III \markup "3. Andante"
     \score {
       <<
-        \globalSettings
         \new Staff = "gamba"
         <<
           \sonataOneGlobalThirdMov
@@ -181,13 +184,10 @@ sonataTwoScoreBreaksIII = {
     \tocItem sonataOne.IV \markup "4. Allegro moderato"
     \score {
       <<
-        \globalSettings
         \new Staff = "gamba"
         <<
           \sonataOneGlobalFourthMov
           \sonataOneGambaFourthMov
-
-          % \new Voice = "scoreBreaks" { \scoreBreaksIV }
         >>
         \new PianoStaff = "harpsichord"
         <<
@@ -223,7 +223,6 @@ sonataTwoScoreBreaksIII = {
     \tocItem sonataTwo.I \markup "1. Adagio"
     \score {
       <<
-        \globalSettings
         \new Staff = "gamba"
         \with { instrumentName = \gambaName}
         <<
@@ -253,13 +252,10 @@ sonataTwoScoreBreaksIII = {
     \tocItem sonataTwo.II \markup "2. Allegro"
     \score {
       <<
-        \globalSettings
         \new Staff = "gamba"
         <<
           \sonataTwoGlobalSecondMov
           \sonataTwoGambaSecondMov
-
-          % \new Voice = "scoreBreaks" { \scoreBreaksII }
         >>
         \new PianoStaff = "harpsichord"
         <<
@@ -285,7 +281,6 @@ sonataTwoScoreBreaksIII = {
     \tocItem sonataTwo.III \markup "3. Andante"
     \score {
       <<
-        \globalSettings
         \new Staff = "gamba"
         <<
           \sonataTwoGlobalThirdMov
@@ -321,13 +316,10 @@ sonataTwoScoreBreaksIII = {
     \tocItem sonataTwo.IV \markup "4. Allegro"
     \score {
       <<
-        \globalSettings
         \new Staff = "gamba"
         <<
           \sonataTwoGlobalFourthMov
           \sonataTwoGambaFourthMov
-
-          % \new Voice = "scoreBreaks" { \scoreBreaksIV }
         >>
         \new PianoStaff = "harpsichord"
         <<
@@ -363,7 +355,6 @@ sonataTwoScoreBreaksIII = {
     \tocItem sonataThree.I \markup "1. Vivace"
     \score {
       <<
-        \globalSettings
         \new Staff = "gamba"
         \with { instrumentName = \gambaName}
         <<
@@ -397,13 +388,10 @@ sonataTwoScoreBreaksIII = {
     \tocItem sonataThree.II \markup "2. Adagio"
     \score {
       <<
-        \globalSettings
         \new Staff = "gamba"
         <<
           \sonataThreeGlobalSecondMov
           \sonataThreeGambaSecondMov
-
-          % \new Voice = "scoreBreaks" { \scoreBreaksII }
         >>
         \new PianoStaff = "harpsichord"
         <<
@@ -428,7 +416,6 @@ sonataTwoScoreBreaksIII = {
     \tocItem sonataThree.III \markup "3. Allegro"
     \score {
       <<
-        \globalSettings
         \new Staff = "gamba"
         <<
           \sonataThreeGlobalThirdMov
