@@ -1,4 +1,4 @@
-\version "2.24.2"
+
 violaFourthMov = \relative c' {
   \clef alto
   \repeat volta 2 {

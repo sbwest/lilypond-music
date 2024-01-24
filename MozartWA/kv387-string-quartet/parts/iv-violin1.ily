@@ -1,4 +1,4 @@
-\version "2.24.2"
+
 violinIFourthMov = \relative c'' {
   \clef treble
   \repeat volta 2 {
@@ -93,7 +93,7 @@ violinIFourthMov = \relative c'' {
     | d2( a) ~
     | a( g4 e)
     | d8 a b cis d e fis g 
-    | a4-!_\markup "semplice" a-! fis-! d'-! 
+    | a4-!_\markup \pagella "semplice" a-! fis-! d'-! 
     | d-! d-! a2 ~ 
     | a4-! a-! g-! e-! 
     | e-! fis-! d2
@@ -231,7 +231,7 @@ violinIFourthMov = \relative c'' {
     | g2( d) ~
     | d( c4 a)
     | g8 d' e fis g a b c 
-    | d4-!_\markup "semplice" d-! b-! g'-! 
+    | d4-!_\markup \pagella "semplice" d-! b-! g'-! 
     | g-! g-! d2 ~ 
     | d4 d-! c-! a-! 
     | a-! b-! g2

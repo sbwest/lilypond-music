@@ -1,4 +1,4 @@
-\version "2.24.2"
+
 celloFourthMov = \relative c' {
   \clef bass
   \repeat volta 2 {

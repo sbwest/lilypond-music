@@ -1,4 +1,4 @@
-\version "2.24.2"
+\include "./version.ily"
 
 % Use preferred custom font of Gonville, with TeX Gyre Pagella as Roman font, Gill Sans as Sans font
 \include "/Users/bryanwest/Lilypond/include/gonville-default.ily"
@@ -70,6 +70,10 @@ violinIName = \markup \pagella "Violin I"
 violinIIName = \markup \pagella "Violin II"
 violaName = \markup \pagella "Viola"
 celloName = \markup \pagella "Cello"
+
+%%%%%
+%% Filenames
+fileName = "kv387-string-quartet-g-major"
 
 %%%%%
 % Movement Titles

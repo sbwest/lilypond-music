@@ -1,13 +1,14 @@
-\version "2.24.2"
 
 \include "./common/metadata.ily"
 
 \include "./common/score-includes.ily"
 
+#(ly:set-option 'midi-extension "mid")
+
 % MIDI
-\bookpart {
-  \bookOutputName "Mozart - String Quartet in G Major, KV 387"
-  #(ly:set-option 'midi-extension "mid")
+% \book {
+  % \bookOutputName \fileName
+  % \bookOutputSuffix "1"
   % \score {
   %   \unfoldRepeats
   %   <<
@@ -40,7 +41,11 @@
   %     >>
   %   >>
   %   \include "./parts/i-midi.ily"
-  % }    
+  % }
+% }
+% \book {   
+  % \bookOutputName \fileName
+  % \bookOutputSuffix "2" 
   % \score {
   %   <<
   %     \new StaffGroup = "strings" <<
@@ -73,7 +78,10 @@
   %   >>
   %   \include "./parts/ii-midi.ily"
   % }
-
+% }
+% \book {
+  % \bookOutputName \fileName
+  % \bookOutputSuffix "3"
   % \score {
   %   <<
   %     \new StaffGroup = "strings" <<
@@ -106,7 +114,9 @@
   %   >>
   %   \include "./parts/iii-midi.ily"
   % }
-
+% }
+\book {
+  \bookOutputSuffix "4"
   \score {
     \unfoldRepeats
     <<

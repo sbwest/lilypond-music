@@ -1,4 +1,4 @@
-\version "2.24.2"
+
 violinIIFourthMov = \relative c'' {
   \clef treble
   \repeat volta 2 {

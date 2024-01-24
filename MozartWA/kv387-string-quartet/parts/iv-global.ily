@@ -1,4 +1,4 @@
-\version "2.24.2"
+
 globalFourthMov = {
   % Global elements here
   \key g \major

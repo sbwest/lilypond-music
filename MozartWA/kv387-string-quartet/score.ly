@@ -32,7 +32,8 @@
 % PDF
 \bookpart {
   % Specify output filename
-  \bookOutputName "Mozart - String Quartet in G Major, KV 387"
+  \bookOutputName \fileName
+  \bookOutputSuffix "score"
   % Each \score block is for a movement of the piece. Only the first score block will include the instrument name.
   % \score {
   %   <<

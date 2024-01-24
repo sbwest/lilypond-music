@@ -1,4 +1,3 @@
-\version "2.24.2"
 
 \include "../common/metadata.ily"
 \include "../common/part-layout.ily" % Part layout specifications that affects all parts
@@ -15,7 +14,7 @@
 \include "./iv-global.ily" % Global settings for fourth movement
 \include "./iv-violin2.ily" % Violin II notes for fourth movement
 
-\include "./violin2_defs.ily" % Custom elements for Violin II part
+\include "./violin2-defs.ily" % Custom elements for Violin II part
 
 \bookpart {
   \paper {
@@ -23,7 +22,8 @@
     % page-breaking = #ly:page-turn-breaking % Change type of page breaking
     % page-count = 4 % If you know how many pages you want the part to be, set here.
   }
-  \bookOutputName "Mozart - String Quartet in G Major, KV 387 - Violin 2 Part"
+  \bookOutputName \fileName
+  \bookOutputSuffix "violin2"
   \header {
     pdftitle = "Mozart - String Quartet in G Major, KV 387 - Violin 2 Part"
     instrument = \violinIIName

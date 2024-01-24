@@ -1,4 +1,3 @@
-\version "2.24.2"
 
 % Define custom elements for violin II part
 %%%%%
