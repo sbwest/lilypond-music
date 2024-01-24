@@ -1,7 +1,7 @@
 \include "../../common/version.ily"
 
 % Use preferred custom font of Gonville, with TeX Gyre Pagella as Roman font, Gill Sans as Sans font
-\include "/Users/bryanwest/Lilypond/include/gonville-default.ily"
+\include "../../common/gonville-default.ily"
 
 \paper {
   #(set-paper-size "c4") % C4 paper is closest to standard music paper (12 x 9 in.)
