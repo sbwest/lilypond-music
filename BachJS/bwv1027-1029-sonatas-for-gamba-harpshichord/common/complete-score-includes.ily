@@ -80,6 +80,7 @@ sonataTwoGlobalThirdMov = \globalThirdMov
 sonataTwoGambaThirdMov = \gambaThirdMov
 sonataTwoHarpsichordRThirdMov = \harpsichordRThirdMov
 sonataTwoHarpsichordLThirdMov = \harpsichordLThirdMov
+sonataTwoHarpsichordLThirdMovFigures = \harpsichordLThirdMovFigures
 
 %% Fourth movement
 \include "../bwv1028/parts/iv-global.ily"
@@ -103,6 +104,7 @@ sonataThreeGlobalFirstMov = \globalFirstMov
 sonataThreeGambaFirstMov = \gambaFirstMov
 sonataThreeHarpsichordRFirstMov = \harpsichordRFirstMov
 sonataThreeHarpsichordLFirstMov = \harpsichordLFirstMov
+sonataThreeHarpsichordLFirstMovFigures = \harpsichordLFirstMovFigures
 
 %% Second movement
 \include "../bwv1029/parts/ii-global.ily"
@@ -125,3 +127,4 @@ sonataThreeGlobalThirdMov = \globalThirdMov
 sonataThreeGambaThirdMov = \gambaThirdMov
 sonataThreeHarpsichordRThirdMov = \harpsichordRThirdMov
 sonataThreeHarpsichordLThirdMov = \harpsichordLThirdMov
+sonataThreeHarpsichordLThirdMovFigures = \harpsichordLThirdMovFigures
