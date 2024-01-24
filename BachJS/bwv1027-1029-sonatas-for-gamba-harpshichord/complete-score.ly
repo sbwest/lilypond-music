@@ -1,6 +1,6 @@
 \version "2.24.2"
 
-\include "./common/metadata.ily"
+\include "./common/complete-score-metadata.ily"
 
 \paper {
   % systems-per-page = 5
@@ -21,7 +21,7 @@
   }
 }
 
-\include "./common/score-includes.ily"
+\include "./common/complete-score-includes.ily"
 
 % PDF
 \book {

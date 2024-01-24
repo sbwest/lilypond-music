@@ -1,8 +1,8 @@
 \version "2.24.2"
 
-\include "./common/metadata.ily"
+\include "./common/complete-score-metadata.ily"
 
-\include "./common/score-includes.ily"
+\include "./common/complete-score-includes.ily"
 
 sonataOneFileName = "bwv1027-sonata-for-gamba-harpsichord"
 sonataTwoFileName = "bwv1028-sonata-for-gamba-harpsichord"
