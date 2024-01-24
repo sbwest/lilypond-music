@@ -2,33 +2,7 @@
 
 \include "./common/complete-score-metadata.ily"
 
-\paper {
-  % #(set-paper-size "letter") % Set paper size (will overried size specified via command line)
-  output-suffix = "score"
-  page-breaking = #ly:optimal-breaking % Set page breaking engine
-  page-spacing-weight = #20
-}
-
-%% Layout settings
-\layout {
-  #(layout-set-staff-size 16)
-  \context {
-    \Score
-    % Increase bar number size
-    \override BarNumber.font-size = #1
-    % Place bar numbers inside box 
-    \override BarNumber.stencil = #(make-stencil-boxer 0.1 0.25 ly:text-interface::print)
-    % Set bar number font
-    \override BarNumber.font-name = \customRomanFont
-    % Hide extender lines from text dynamics like 'cresc'
-    \override DynamicTextSpanner.style = #'none 
-  }
-  \context {
-    \Voice
-    \consists "Melody_engraver"
-    \override Stem.neutral-direction = #'()
-  }
-}
+\include "./common/page-settings.ily"
 
 \include "./common/complete-score-includes.ily"
 
@@ -54,6 +28,7 @@ sonataTwoScoreBreaksIII = {
 \book {
   % Specify output filename
   \bookOutputName \fileName
+  \bookOutputSuffix "score"
   \header {
     composer = ##f
     opus = ##f
