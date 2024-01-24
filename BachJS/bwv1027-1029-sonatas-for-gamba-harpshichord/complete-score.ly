@@ -30,6 +30,8 @@
   }
 }
 
+\include "./common/complete-score-includes.ily"
+
 sonataOneScoreBreaksI = {
   s2. s \break
   | s2. \appoggiatura s8 s2. \noBreak
@@ -47,8 +49,6 @@ sonataTwoScoreBreaksIII = {
   \repeat unfold 13 { | s1. \noBreak | s1. }
   | s1. \noBreak
 }
-
-\include "./common/complete-score-includes.ily"
 
 % PDF
 \book {
