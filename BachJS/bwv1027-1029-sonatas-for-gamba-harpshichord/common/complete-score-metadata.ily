@@ -60,6 +60,8 @@ globalSettings = {
   tagline = ##f
 }
 
+\include "./mutopia-header.ily"
+
 %% Global layout settings
 \layout {
   \context {
