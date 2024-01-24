@@ -1,4 +1,4 @@
-\version "2.24.2"
+\include "../../common/version.ily"
 % Global settings for first movement, to be included in both score and individual parts
 globalFirstMov = {
   \key g \minor

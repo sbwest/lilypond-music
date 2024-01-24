@@ -1,4 +1,4 @@
-\version "2.24.2"
+\include "../../common/version.ily"
 gambaThirdMov = \relative c' {
   \clef alto 
   | r2 e16( gis) a( c) e,16( gis) a( c)

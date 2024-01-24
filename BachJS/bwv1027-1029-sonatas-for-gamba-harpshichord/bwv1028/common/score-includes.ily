@@ -1,4 +1,4 @@
-\version "2.24.2"
+\include "../../common/version.ily"
 
 % Include files for each movement. 'i-[instrument].ily' files contain just the notes for that instrument for that movement. 'i-global.ily' contains global elements (key signature, time signature, tempo, etc.)
 %% First movement

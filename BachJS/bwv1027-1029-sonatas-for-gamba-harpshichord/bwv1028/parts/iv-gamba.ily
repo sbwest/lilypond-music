@@ -1,4 +1,4 @@
-\version "2.24.2"
+\include "../../common/version.ily"
 gambaFourthMov = \relative c' {
   \clef alto 
   | a8 d e fis4 r8

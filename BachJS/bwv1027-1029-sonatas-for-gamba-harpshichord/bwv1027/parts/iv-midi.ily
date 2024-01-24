@@ -1,4 +1,4 @@
-\version "2.24.2"
+\include "../../common/version.ily"
 
 \midi {
   \tempo 2 = 92

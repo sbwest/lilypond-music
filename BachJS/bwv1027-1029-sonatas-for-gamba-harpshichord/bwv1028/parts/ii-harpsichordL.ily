@@ -1,4 +1,4 @@
-\version "2.24.2"
+\include "../../common/version.ily"
 
 harpsichordLSecondMov = \relative c' {
   \clef bass

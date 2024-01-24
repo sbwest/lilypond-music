@@ -1,4 +1,4 @@
-\version "2.24.2"
+\include "../../common/version.ily"
 gambaFirstMov = \relative c' {
   \clef alto
   | b8 d16( c) b( a) b8-. g-. a16( b32 c) \appoggiatura c8 b8 d16( c) b( a) b g d'8-. e16( fis32 g)

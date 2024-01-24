@@ -1,4 +1,4 @@
-\version "2.24.2"
+\include "../../common/version.ily"
 
 % Use preferred custom font of Gonville, with TeX Gyre Pagella as Roman font, Gill Sans as Sans font
 \include "/Users/bryanwest/Lilypond/include/gonville-default.ily"
