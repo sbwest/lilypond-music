@@ -69,7 +69,7 @@ cembaloName = \markup \pagella "Harpsichord"
 
 %%%%%
 %% Filename
-fileName = "Bach-Sonata-Gamba-Cembalo-BWV-1027"
+fileName = "bwv1027-sonata-for-gamba-harpsichord"
 %% Movement Titles
 % header[N] variables for each movement title or number of work. To be placed in the 'piece' element of a \header block
 % Example:
