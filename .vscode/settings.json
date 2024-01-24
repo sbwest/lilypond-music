@@ -1,4 +1,8 @@
 {
     "vslilypond.compilation.compileMainFileOnSave": false,
-    "vslilypond.compilation.compileOnSave": false
+    "vslilypond.compilation.compileOnSave": false,
+    "workbench.editor.defaultBinaryEditor": "default",
+    "workbench.editorAssociations": {
+        "*.pdf": "lilypond.pdf.preview"
+    }
 }
