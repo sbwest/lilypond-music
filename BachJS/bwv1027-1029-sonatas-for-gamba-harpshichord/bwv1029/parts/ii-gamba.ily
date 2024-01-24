@@ -17,6 +17,7 @@ gambaSecondMov = \relative c' {
     \volta 1 { f1. }
     \volta 2 { f1. \bar ".|:-||" }
   } \break
+  \allowPageTurn
   \repeat volta 2 {
     r2 c d4( ees)
     | b2 f'1 ~ 

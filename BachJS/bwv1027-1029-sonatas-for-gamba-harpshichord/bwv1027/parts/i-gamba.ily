@@ -2,8 +2,11 @@
 gambaFirstMov = \relative c' {
   \clef alto
   | b8 d16( c) b( a) b8-. g-. a16( b32 c) \appoggiatura c8 b8 d16( c) b( a) b g d'8-. e16( fis32 g)
+  \break
   | fis8 g16( fis) e( d) g8-. d-. d16( e32 f) \appoggiatura f8 e8 f16( e) d( c) d8-. g-. b,16( c32 d)
+  \noBreak
   | \appoggiatura d8 c8 d16( c) b( a) b a g a b c d c e( d) c( b) a( g fis e) d8-. 
+  \break
   | a''1. ~ 
   | a2. ~ a8 g4 ~ g8 fis4 ~ 
   | fis8 e4 ~ e8 a cis,\trill d4. ~ d16 cis e( d) cis( b)
@@ -27,8 +30,11 @@ gambaFirstMov = \relative c' {
   | e16( d c b a g) fis( g) g( a) a8 ~ 16 fis g4 ~ g16 e a8-. fis\trill
   | g16( b d c) b( a) b8-. g-. a16( b32 c) \appoggiatura c8 b8 d16( c b a) b( g) a( c) b( d)
   | cis2.\startTrillSpan c ~
+  \noBreak
   | c4\stopTrillSpan r8 r4. bes2.\startTrillSpan
+  \noBreak
   | a1.\stopTrillSpan
+  \noBreak
   \bar "||"
   \time 3/4
   \partial 64

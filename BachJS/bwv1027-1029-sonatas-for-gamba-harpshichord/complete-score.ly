@@ -3,8 +3,9 @@
 \include "./common/complete-score-metadata.ily"
 
 \paper {
-  % systems-per-page = 5
+  #(set-paper-size "c4") % C4 paper is closest to standard music paper (12 x 9 in.)
   output-suffix = "score"
+  page-breaking = #ly:optimal-breaking
 }
 
 \layout {
@@ -19,6 +20,43 @@
     \consists "Melody_engraver"
     \override Stem.neutral-direction = #'()
   }
+}
+
+sonataOneScoreBreaksI = {
+  s2. s \break
+  | s2. \appoggiatura s8 s2. \noBreak
+  | s2. \appoggiatura s8 s2. \break
+  | s1. \noBreak
+  | s1. 
+  | s1. \noBreak
+  | s1. 
+  | s1. \noBreak
+  | s1. 
+  | s1. \noBreak
+  | s1. 
+  | s1. \noBreak
+  | s1. 
+  | s1. \noBreak
+  | s1. 
+  | s1. \noBreak
+  | s1. 
+  | s1. \noBreak
+  | s1. 
+  | s1. \noBreak
+  | s1. 
+  | s1. \noBreak
+  | s1. 
+  | s1. \noBreak
+  | s1. \break
+  | s1. \noBreak
+  | s1. \noBreak
+}
+
+sonataTwoScoreBreaksIII = {
+  s8 
+  | s1. \break 
+  \repeat unfold 13 { | s1. \noBreak | s1. }
+  | s1. \noBreak
 }
 
 \include "./common/complete-score-includes.ily"
@@ -43,7 +81,6 @@
       opus = ##f
       subsubtitle = "BWV 1027"
       composer = ##f
-      % breakbefore = ##t
     }
     % Each \score block is for a movement of the piece. Only the first score block will include the instrument name.
     \tocItem sonataOne.I \markup "1. Adagio"
@@ -55,6 +92,7 @@
         <<
           \sonataOneGlobalFirstMov
           \sonataOneGambaFirstMov
+          \new Voice = "scoreBreaks" { \sonataOneScoreBreaksI }
         >>
         \new PianoStaff = "harpsichord"
         \with { instrumentName = \harpsichordName }
@@ -76,7 +114,6 @@
         indent = 1\in
       }
     }
-
     \pageBreak
     \tocItem sonataOne.II \markup "2. Allegro ma non tanto"
     \score {
@@ -112,9 +149,6 @@
     \pageBreak
     \tocItem sonataOne.III \markup "3. Andante"
     \score {
-      % \paper {
-      %   page-breaking = #ly:optimal-breaking
-      % }
       <<
         \globalSettings
         \new Staff = "gamba"
@@ -176,7 +210,7 @@
       \layout { }
     }
   }
-
+  
   \bookpart {
     \tocItem sonataTwo \markup "Sonata in D Major, BWV 1028"
     \header {
@@ -184,7 +218,6 @@
       subtitle = ##f
       subsubtitle = "BWV 1028"
       composer = ##f
-      % breakbefore = ##t
     }
     % Each \score block is for a movement of the piece. Only the first score block will include the instrument name.
     \tocItem sonataTwo.I \markup "1. Adagio"
@@ -251,9 +284,6 @@
     \pageBreak
     \tocItem sonataTwo.III \markup "3. Andante"
     \score {
-      % \paper {
-      %   page-breaking = #ly:optimal-breaking
-      % }
       <<
         \globalSettings
         \new Staff = "gamba"
@@ -261,7 +291,7 @@
           \sonataTwoGlobalThirdMov
           \sonataTwoGambaThirdMov
 
-          % \new Voice = "scoreBreaks" { \scoreBreaksIII }
+          \new Voice = "scoreBreaks" { \sonataTwoScoreBreaksIII }
         >>
         \new PianoStaff = "harpsichord"
         <<
@@ -270,6 +300,10 @@
             \sonataTwoHarpsichordRThirdMov
           }
           \new Staff = "left" {
+            \sonataTwoGlobalThirdMov
+            \sonataTwoHarpsichordLThirdMovFigures
+          }
+          \context Staff = "left" {
             \sonataTwoGlobalThirdMov
             \sonataTwoHarpsichordLThirdMov
           }
@@ -283,12 +317,9 @@
       }
       \layout { }
     }
-    
+    \pageBreak
     \tocItem sonataTwo.IV \markup "4. Allegro"
     \score {
-      % \paper {
-      %   page-breaking = #ly:optimal-breaking
-      % }
       <<
         \globalSettings
         \new Staff = "gamba"
@@ -348,6 +379,10 @@
           }
           \new Staff = "left" {
             \sonataThreeGlobalFirstMov
+            \sonataThreeHarpsichordLFirstMovFigures
+          }
+          \context Staff = "left" {
+            \sonataThreeGlobalFirstMov
             \sonataThreeHarpsichordLFirstMov
           }
         >>
@@ -359,7 +394,6 @@
         indent = 1\in
       }
     }
-
     \tocItem sonataThree.II \markup "2. Adagio"
     \score {
       <<
@@ -392,7 +426,6 @@
       \layout { }
     }
     \tocItem sonataThree.III \markup "3. Allegro"
-    \pageBreak
     \score {
       <<
         \globalSettings
@@ -408,6 +441,10 @@
             \sonataThreeHarpsichordRThirdMov
           }
           \new Staff = "left" {
+            \sonataThreeGlobalThirdMov
+            \sonataThreeHarpsichordLThirdMovFigures
+          }
+          \context Staff = "left" {
             \sonataThreeGlobalThirdMov
             \sonataThreeHarpsichordLThirdMov
           }
