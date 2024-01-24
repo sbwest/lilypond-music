@@ -4,10 +4,6 @@
 
 \include "./common/complete-score-includes.ily"
 
-sonataOneFileName = "bwv1027-sonata-for-gamba-harpsichord"
-sonataTwoFileName = "bwv1028-sonata-for-gamba-harpsichord"
-sonataThreeFileName = "bwv1029-sonata-for-gamba-harpsichord"
-
 % MIDI
 % Sonata BWV 1027
 \book {
