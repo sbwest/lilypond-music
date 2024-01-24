@@ -29,7 +29,7 @@
 % overridesIII = { }
 % overridesIV = { }
 
-% Set line breaks for score (only inserted into first violin part)
+% Set line breaks for score (only inserted into first instrument part)
 % scoreBreaksI = { }
 % scoreBreaksII = { }
 % scoreBreaksIII = { }
@@ -77,9 +77,6 @@
   } 
   % \pageBreak
   \score {
-    % \paper {
-    %   page-breaking = #ly:optimal-breaking
-    % }
     <<
       \globalSettings
       \new Staff = "gamba"
@@ -111,9 +108,6 @@
   } 
   % \pageBreak
   \score {
-    % \paper {
-    %   page-breaking = #ly:optimal-breaking
-    % }
     <<
       \globalSettings
       \new Staff = "gamba"
@@ -129,9 +123,6 @@
             \globalThirdMov
             \harpsichordRThirdMov
           }
-          % \new FiguredBass {
-          %   \harpsichordLThirdMovFigures
-          % }
           \new Staff = "left" {
             \globalThirdMov
             \harpsichordLThirdMovFigures
@@ -140,7 +131,6 @@
             \globalThirdMov
             \harpsichordLThirdMov
           }
-          
       >>
     >>
     \header {

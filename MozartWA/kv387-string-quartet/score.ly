@@ -23,7 +23,7 @@
 % overridesIII = { }
 % overridesIV = { }
 
-% Set line breaks for score (only inserted into first violin part)
+% Set line breaks for score (only inserted into first instrument part)
 % scoreBreaksI = { }
 % scoreBreaksII = { }
 % scoreBreaksIII = { }
