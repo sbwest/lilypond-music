@@ -45,13 +45,13 @@
 }
 
 % Explicitly set the font for basso continuo figures to default font
-\layout {
-  \context {
-    \FiguredBass
-    \override BassFigureAlignmentSpanner.font-name = ##f
-    \override BassFigure.font-name = ##f
-  }
-}
+% \layout {
+%   \context {
+%     \FiguredBass
+%     \override BassFigureAlignmentSpanner.font-name = ##f
+%     \override BassFigure.font-name = ##f
+%   }
+% }
 
 % Lilypond displays most music symbols by directly accessing the font
 % file. But the parts of the music font that fit in ASCII (letters for
