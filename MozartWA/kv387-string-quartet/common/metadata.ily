@@ -1,6 +1,8 @@
 \include "./version.ily"
 
 % Use preferred custom font of Gonville, with TeX Gyre Pagella as Roman font, Gill Sans as Sans font
+% Get Gonville here: https://github.com/OpenLilyPondFonts/gonville
+% TeX Gyre Pagella can be found at https://www.ctan.org/tex-archive/fonts/tex-gyre/
 \include "/Users/bryanwest/Lilypond/include/gonville-default.ily"
 
 \paper {
