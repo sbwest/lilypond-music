@@ -9,12 +9,29 @@ customRomanFont = "TeX Gyre Pagella"
 
 %%%%%
 % Instrument names
-violaIName = \markup \pagella "Viola I da braccio"
-violaIIName = \markup \pagella "Viola II da braccio"
-gambaIName = \markup \pagella "Viola I da gamba"
-gambaIIName = \markup \pagella "Viola II da gamba"
+violaIName = \markup \center-column { 
+  \line { \pagella "Viola I da" }
+  \raise #1 \line { \pagella "braccio" }
+}
+violaIIName = \markup \center-column { 
+  \line { \pagella "Viola II da" }
+  \raise #1 \line { \pagella "braccio" }
+}
+gambaIName = \markup \center-column { 
+  \line { \pagella "Viola I da" }
+  \raise #1 \line { \pagella "gamba" }
+}
+gambaIIName = \markup \center-column { 
+  \line { \pagella "Viola II da" }
+  \raise #1 \line { \pagella "gamba" }
+}
 celloName = \markup \pagella "Violoncello"
-harpsichordName = \markup \pagella "Violone e Cembalo"
+harpsichordName = \markup \center-column {
+  \line { \pagella "Violone e" }
+  \raise #1 \line { \pagella "Cembalo" }
+} 
+
+harpsichordPartName = \markup \pagella "Cembalo"
 
 %%%%%
 % Commonly used custom expressions, articulations, functions, etc.
