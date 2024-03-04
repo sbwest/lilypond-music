@@ -207,13 +207,13 @@
           \globalThirdMov
           \harpsichordThirdMov
         }
-        % \new Staff = "harpsichordR" {
-        %   \set Staff.midiInstrument = "harpsichord"
-        %   \set Staff.midiPanPosition = 0.25
-        %   \set Staff.midiReverbLevel = 0.25
-        %   \globalThirdMov
-        %   \harpsichordRThirdMov
-        % }
+        \new Staff = "harpsichordR" {
+          \set Staff.midiInstrument = "harpsichord"
+          \set Staff.midiPanPosition = 0.25
+          \set Staff.midiReverbLevel = 0.25
+          \globalThirdMov
+          \harpsichordRThirdMov
+        }
         \new Staff = "bass" {
           \set Staff.midiInstrument = "contrabass"
           \set Staff.midiPanPosition = 0.3

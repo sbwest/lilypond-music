@@ -65,4 +65,31 @@
       indent = 1\in
      }
   } 
+  \score {
+    <<
+      \new PianoStaff = "harpsichord"
+      \with { instrumentName = \harpsichordPartName }
+      <<
+        \compressEmptyMeasures
+        \new Staff = "harpsichordR"
+        \with { \consists "Span_arpeggio_engraver" }
+        <<
+          \set Staff.connectArpeggios = ##t
+          \globalThirdMov
+          \harpsichordRThirdMov
+        >>
+        \new Staff = "harpsichordL"
+        <<
+          \globalThirdMov
+          \harpsichordThirdMov
+        >>
+      >>
+    >>
+    \header {
+      piece = \headerIII
+    }
+    \layout {
+      indent = 1\in
+     }
+  } 
 }
