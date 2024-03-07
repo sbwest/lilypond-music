@@ -68,7 +68,7 @@ harpsichordSecondMov = \relative c {
   % 60
   | f,2 r bes
   | ees,2 r ees 
-  | d1.\fermata \bar "|."
+  | d1._\fermata \bar "|."
 }
 
 harpsichordRSecondMov = \relative c'' {
@@ -208,5 +208,5 @@ harpsichordRSecondMov = \relative c'' {
   | <g d bes>2\arpeggio r <g ees~> 
   | <a ees c>2 r <f d~>
   | <g d bes>2 r << { bes,4 c }\\{ g2 } >>
-  | <d' a fis>1.\arpeggio
+  | <d' a fis>1.\arpeggio \bar "|."
 }

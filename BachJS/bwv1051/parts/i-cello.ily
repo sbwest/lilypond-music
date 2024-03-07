@@ -7,7 +7,7 @@ celloFirstMov = \relative c {
   | d[ d d d] g[ g g g] 
   % 10
   | \repeat unfold 6 { \repeat unfold 2 { f8[ f f f] } | } 
-    f8[ f ees ees] d8. ees16 f8 f,16 f'
+    f8[ f ees ees] d8. ees16 f8[ f,16 f']
   | bes8 bes16( a) bes8 bes16( a) bes f d ees f d bes c 
   | d8 bes16 c d8 d16 ees f8 f16( ees) f8 f16( ees) 
   | f8 f16 ees d8 d16 c bes8[ bes' bes bes]
