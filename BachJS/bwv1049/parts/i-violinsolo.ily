@@ -185,30 +185,30 @@ violinSoloFirstMov = \relative c'' {
   | R4. * 8
   | e4. ~ 
   | e ~ 
-  | e32( a gis fis) e( a gis fis e d c b)
-  | a( b c d) e( fis gis e) a( g f e)
-  | f( e d c) e( d c b) d( c b a)
+  | e32( a gis fis) e([ a gis fis] e d c b)
+  | a( b c d) e([ fis gis e]) a( g f e)
+  | f( e d c) e([ d c b]) d( c b a)
   % 190
-  | gis( a b c) d( c b a gis fis e d)
-  | c( a b c) d( e fis gis a b c a) 
-  | gis( e fis gis) a( b c d e d c b)
-  | c( a b c) d( e fis gis) a( e fis gis 
-  | a b c d) e( d c b a g! f! e)
-  | f( e d e) f( g a g f e d c)
-  | b( c d c) b( a gis fis e d c b) 
-  | a( c b a) e'( d c b) a( b c d)
-  | e( fis gis e) a( b c b a g f e)
-  | d( f e d) a'( g f e) d( e f g) 
+  | gis( a b c) d([ c b a] gis fis e d)
+  | c( a b c) d([ e fis gis] a b c a) 
+  | gis( e fis gis) a([ b c d] e d c b)
+  | c( a b c) d([ e fis gis]) a( e fis gis 
+  | a b c d) e([ d c b] a g! f! e)
+  | f( e d e) f([ g a g] f e d c)
+  | b( c d c) b([ a gis fis] e d c b) 
+  | a( c b a) e'([ d c b]) a( b c d)
+  | e( fis gis e) a([ b c b] a g f e)
+  | d( f e d) a'([ g f e]) d( e f g) 
   % 200
-  | a( b cis a) d( e f e d c b a)
-  | g,( b a g) d'( c b a) g( a b c) 
-  | d( e f d) g( a b a g f e d)
-  | c( e d c) g'( f e d) (c d e f) 
-  | g( a b g) c( d e d c b a g) 
-  | f( a b c) d( e f e d c b a)
-  | g( b c d) e( f g f e d c b) 
-  | a( c b d) f( g a g f e d c) 
-  | b( d e f) g( a b a g f e d)
+  | a( b cis a) d([ e f e] d c b a)
+  | g,( b a g) d'([ c b a]) g( a b c) 
+  | d( e f d) g([ a b a] g f e d)
+  | c( e d c) g'([ f e d]) (c d e f) 
+  | g( a b g) c([ d e d] c b a g) 
+  | f( a b c) d([ e f e] d c b a)
+  | g( b c d) e([ f g f] e d c b) 
+  | a( c b d) f([ g a g] f e d c) 
+  | b( d e f) g([ a b a] g f e d)
   | c8 r r 
   | d r r 
   | e r r 
@@ -242,7 +242,7 @@ violinSoloFirstMov = \relative c'' {
       | d d16 e f8 
       | e g, bes ~ 
       | bes a c ~ 
-      | c b d ~ 
+      | c b! d ~ 
       | d c e ~ 
       | e d f ~ 
       | f e g ~ 
