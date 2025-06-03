@@ -26,7 +26,7 @@ celloSixthMov = \relative c {
     | fis(\upbow g a) fis( g) e 
     | cis4\trill a8 b cis d 
     | e(\upbow fis g b) a4 
-    | g8\upbow fis( e d) e( cis)
+    | g8\upbow fis( e d) e(-\markup {\pagella \smaller "Menuet I da capo"} cis)
     | d2.\upbow \finalFermata
   }
 }
