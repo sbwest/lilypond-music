@@ -101,3 +101,53 @@ suiteTwoCelloSixthMov = \celloSixthMov
 
 suiteTwoGlobalSeventhMov = \globalSeventhMov
 suiteTwoCelloSeventhMov = \celloSeventhMov
+
+%%%%% BWV 1009
+%% First movement
+\include "../bwv1009/parts/i-global.ily"
+\include "../bwv1009/parts/i-notes.ily"
+
+suiteThreeGlobalFirstMov = \globalFirstMov
+suiteThreeCelloFirstMov = \celloFirstMov
+
+%% Second movement
+\include "../bwv1009/parts/ii-global.ily"
+\include "../bwv1009/parts/ii-notes.ily"
+
+suiteThreeGlobalSecondMov = \globalSecondMov
+suiteThreeCelloSecondMov = \celloSecondMov
+
+%% Third movement
+\include "../bwv1009/parts/iii-global.ily"
+\include "../bwv1009/parts/iii-notes.ily"
+
+suiteThreeGlobalThirdMov = \globalThirdMov
+suiteThreeCelloThirdMov = \celloThirdMov
+
+%% Fourth movement
+\include "../bwv1009/parts/iv-global.ily"
+\include "../bwv1009/parts/iv-notes.ily"
+
+suiteThreeGlobalFourthMov = \globalFourthMov
+suiteThreeCelloFourthMov = \celloFourthMov
+
+%% Fifth movement
+\include "../bwv1009/parts/v-global.ily"
+\include "../bwv1009/parts/v-notes.ily"
+
+suiteThreeGlobalFifthMov = \globalFifthMov
+suiteThreeCelloFifthMov = \celloFifthMov
+
+%% Sixth movement
+\include "../bwv1009/parts/vi-global.ily"
+\include "../bwv1009/parts/vi-notes.ily"
+
+suiteThreeGlobalSixthMov = \globalSixthMov
+suiteThreeCelloSixthMov = \celloSixthMov
+
+%% Seventh movement
+\include "../bwv1009/parts/vii-global.ily"
+\include "../bwv1009/parts/vii-notes.ily"
+
+suiteThreeGlobalSeventhMov = \globalSeventhMov
+suiteThreeCelloSeventhMov = \celloSeventhMov

@@ -205,7 +205,7 @@
     }
   }
 
-\bookpart {
+  \bookpart {
     \tocItem suiteTwo \markup "Suite II in D Minor, BWV 1008"
     \header {
       title = "Suite"
@@ -374,6 +374,170 @@
         indent = 0.25\in 
       }
     }
-  }  
+  }
+
+  \bookpart {
+    \tocItem suiteThree \markup "Suite III in C Major, BWV 1009"
+    \header {
+      title = "Suite"
+      subtitle = ##f
+      opus = ##f
+      subsubtitle = "BWV 1009"
+      composer = ##f
+      % breakbefore = ##t
+    }
+    % Each \score block is for a movement of the piece. Only the first score block will include the instrument name.
+    \score {
+      <<
+        \globalSettings
+        \new Staff = "cello"
+        % \with { instrumentName = \celloName}
+        <<
+          \suiteThreeGlobalFirstMov
+          \suiteThreeCelloFirstMov
+          % \new Voice = "scoreBreaks" { \suiteThreeFirstMovBreaks }
+        >>
+      >>
+      \header {
+        piece = \suiteThreeHeaderI
+      }
+      \layout {
+        indent = 0.25\in
+      }
+    }
+
+    \pageBreak
+    \score {
+      <<
+        \globalSettings
+        \new Staff = "cello"
+        <<
+          \suiteThreeGlobalSecondMov
+          \suiteThreeCelloSecondMov
+
+          % \new Voice = "scoreBreaks" { \scoreBreaksII }
+        >>
+      >>
+      \header {
+        title = ##f
+        subtitle = ##f
+        composer = ##f
+        piece = \suiteThreeHeaderII
+      }
+      \layout { 
+        indent = 0.25\in
+      }
+    }
+    \pageBreak
+    \score {
+      % \paper {
+      %   page-breaking = #ly:optimal-breaking
+      % }
+      <<
+        \globalSettings
+        \new Staff = "cello"
+        <<
+          \suiteThreeGlobalThirdMov
+          \suiteThreeCelloThirdMov
+
+        >>
+      >>
+      \header {
+        title = ##f
+        subtitle = ##f
+        composer = ##f
+        piece = \suiteThreeHeaderIII
+      }
+      \layout { 
+        indent = 0.25\in
+      }
+    }
+    \pageBreak
+    \score {
+      <<
+        \globalSettings
+        \new Staff = "cello"
+        <<
+          \suiteThreeGlobalFourthMov
+          \suiteThreeCelloFourthMov
+
+          % \new Voice = "scoreBreaks" { \scoreBreaksIV }
+        >>
+      >>
+      \header {
+        title = ##f
+        subtitle = ##f
+        composer = ##f
+        piece = \suiteThreeHeaderIV
+      }
+      \layout { 
+        indent = 0.25\in
+      }
+    }
+    \score {
+      <<
+        \globalSettings
+        \new Staff = "cello"
+        <<
+          \suiteThreeGlobalFifthMov
+          \suiteThreeCelloFifthMov
+
+          % \new Voice = "scoreBreaks" { \scoreBreaksV }
+        >>
+      >>
+      \header {
+        title = ##f
+        subtitle = ##f
+        composer = ##f
+        piece = \suiteThreeHeaderV
+      }
+      \layout { 
+        indent = 0.25\in
+      }
+    }
+    \score {
+      <<
+        \globalSettings
+        \new Staff = "cello"
+        <<
+          \suiteThreeGlobalSixthMov
+          \suiteThreeCelloSixthMov
+
+          % \new Voice = "scoreBreaks" { \scoreBreaksVI }
+        >>
+      >>
+      \header {
+        title = ##f
+        subtitle = ##f
+        composer = ##f
+        piece = \suiteThreeHeaderVI
+      }
+      \layout {
+        indent = 0.25\in
+       }
+    }
+    % \pageBreak
+    \score {
+      <<
+        \globalSettings
+        \new Staff = "cello"
+        <<
+          \suiteThreeGlobalSeventhMov
+          \suiteThreeCelloSeventhMov
+
+          % \new Voice = "scoreBreaks" { \scoreBreaksVII }
+        >>
+      >>
+      \header {
+        title = ##f
+        subtitle = ##f
+        composer = ##f
+        piece = \suiteThreeHeaderVII
+      }
+      \layout { 
+        indent = 0.25\in 
+      }
+    }
+  }
 
 }
