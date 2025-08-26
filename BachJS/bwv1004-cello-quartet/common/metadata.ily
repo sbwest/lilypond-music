@@ -5,11 +5,13 @@
 \include "gonville-default.ily"
 
 \paper {
-  #(set-paper-size "c4")
-  % page-breaking = #ly:page-turn-breaking
+  #(set-paper-size "letter")
   % first-page-number = 2
   % page-breaking = #ly:minimal-breaking
-  page-breaking = #ly:optimal-breaking
+  % page-breaking = #ly:optimal-breaking
+  page-breaking = #ly:page-turn-breaking
+  auto-first-page-number = ##t
+  print-first-page-number = ##t
   % system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
   % ragged-last-bottom = ##f
   % ragged-bottom = ##f

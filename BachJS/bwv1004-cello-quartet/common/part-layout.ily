@@ -4,9 +4,11 @@
 
 % Part Layout Settings
 \paper {
-  % page-breaking = #ly:page-turn-breaking
-  % #(set-paper-size "a4")
+  page-breaking = #ly:page-turn-breaking
+  #(set-paper-size "letter")
   ragged-last-bottom = ##t
+  auto-first-page-number = ##t
+  print-page-number = ##t
 }
 
 \layout {
