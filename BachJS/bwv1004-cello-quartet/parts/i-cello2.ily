@@ -54,7 +54,7 @@ celloIIFirstMov = \relative c' {
   | r16 c, e g c g c e a,8 r 
   | r16 bes,\< d f bes f bes d g,8 r\! 
   | e8 r r4 a\upbow\< 
-  | \clef tenor f'4.(\f f8--) g4  
+  | f'4.(\f f8--) g4  
   | e4.( e8--) f4 
   | d4.( d8--) e4 
   | a,8 d d16( cis) d( b) cis8 r 
@@ -75,7 +75,7 @@ celloIIFirstMov = \relative c' {
   | bes8-- r r4 r
   | R2. 
   | d,16\p a'( d e) f( d bes) a gis b( d f) 
-  | r4 a4(--\open a--\open) 
+  | r4 \clef tenor a4(--\open a--\open) 
   | r4 g(-- g--)
   | r4 f(-- cis--) 
   | r4 bes(--\pp b--)
@@ -238,7 +238,7 @@ celloIIFirstMov = \relative c' {
   | d8-- r r4 g\downbow ~ 
   | \tuplet 3/2 8 { g16 g( f e[) e( d] c) c( bes a)[ a( g] f) a( bes c[ d ees] } 
   \tupletBracket
-  | d8) r r \tuplet 3/2 8 { r16 g,( f \noTupletBracket e) e( d cis)[ cis( b] } 
+  | d8) r r \clef bass \tuplet 3/2 8 { r16 g,( f \noTupletBracket e) e( d cis)[ cis( b] } 
   | a4) r r 
   | r4 <a' f>4.\ff\downbow <a f>8 
   | <bes g>4 <a g>4. <a g>8

@@ -111,7 +111,7 @@ celloIFirstMov = \relative c' {
   | <d' e, gis,>4-\arpeggiotext-\simile <cis e, a,> <cis e, g,> 
   | <c d, fis,>4 <b d, g,> <b d, f,>
   | <bes cis, e,> <a d, f,> <g cis, e,>
-  | <fis d d,>\ff <f a, c,> <f g, b,>
+  | <fis d d,>\ff \clef bass <f a, c,> <f g, b,>
   | <e g, c,> <ees g, g,> <ees f, a,>
   | <d f, bes,> <d g, bes,> <d f, a,>
   | <d e, gis,> <d e, a,> <cis e, a,>
@@ -120,7 +120,7 @@ celloIFirstMov = \relative c' {
   | bes4-> r r8. bes16-> 
   | a8.( a16-.) g8.( g16-.) a4 
   | d8 r r4 r4 
-  | e'4\f e4. e8 
+  | \clef tenor e'4\f e4. e8 
   | f4 d4. d8 
   | bes'4 a g 
   | g fis r8 f\upbow 

@@ -105,22 +105,22 @@ celloIIIFirstMov = \relative c {
   | d( d a a a a)
   | r4 a'( c)
   | bes2( c4) 
-  | \clef tenor r4 bes'( e,)
+  | \clef treble r4 bes'( e,)
   | e( a g) 
   | f( fis2)
   | g4( gis2) 
-  | \clef treble a4( c b) 
+  | a4( c b) 
   | d2( cis4) 
   | d2. 
   | d4( cis2)
   | c4( b2)
   | bes4( a g) 
-  | fis4 c--\ff d-- 
+  | fis4 \clef bass c--\ff d-- 
   | c-- bes-- c-- 
   | bes d2 ~ 
   | d4 d-- cis-- 
   | d8 r r4 r 
-  | \clef bass r8 e32( d c d c bes c bes a bes a g) a( bes c d ees8--)
+  | r8 e32( d c d c bes c bes a bes a g) a( bes c d ees8--)
   | r4 r r8. bes,16-> 
   | a8.(-> a16-.) g8.(-> g16-.) a4 
   | d,8 r r4 r4 
