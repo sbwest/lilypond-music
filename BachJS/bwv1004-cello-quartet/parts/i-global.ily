@@ -1,4 +1,4 @@
-\version "2.24.2"
+% \include "../common/version.ily"
 globalFirstMov = {
   \key d \minor
   \time 3/4

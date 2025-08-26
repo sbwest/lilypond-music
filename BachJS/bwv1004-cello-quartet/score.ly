@@ -1,4 +1,6 @@
-\version "2.24.2"
+% \version "2.24.2"
+
+\include "./common/version.ily"
 
 \include "./common/metadata.ily"
 

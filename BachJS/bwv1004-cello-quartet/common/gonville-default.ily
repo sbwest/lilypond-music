@@ -32,14 +32,15 @@
   Default stylesheet for the Gonville font.
 %}
 
+\include "./version.ily"
+
 % Reconfigure the fonts for music symbols and braces to Gonville.
 \paper {
   #(define fonts 
      (set-global-fonts 
-      #:roman "TeX Gyre Pagella"
+      #:roman "Tex Gyre Pagella"
       #:music "gonville"
       #:brace "gonville"
-      #:sans "Gill Sans"
       #:factor (/ staff-height pt 20)
      ))
 }

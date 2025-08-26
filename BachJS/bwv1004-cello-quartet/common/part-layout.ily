@@ -1,4 +1,6 @@
-\version "2.24.2"
+\include "./version.ily"
+
+% \version "2.24.2"
 
 % Part Layout Settings
 \paper {

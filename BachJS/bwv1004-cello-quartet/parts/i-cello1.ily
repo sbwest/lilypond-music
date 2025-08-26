@@ -1,4 +1,4 @@
-\version "2.24.2"
+% \include "../common/version.ily"
 celloIFirstMov = \relative c' {
   \clef tenor
   \set baseMoment = #(ly:make-moment 1/8)
