@@ -91,31 +91,31 @@ scoreBreaksIV = { }
     <<
       \new StaffGroup = "strings" <<
         \globalSettings
-        \new Staff = "celloI" <<
-          \set Staff.midiInstrument = #"violin"
-          \set Staff.instrumentName = "Violino I."
+        \new Staff = "cello1" <<
+          \set Staff.midiInstrument = #"cello"
+          \set Staff.instrumentName = \celloIIName
 
           \globalFirstMov
           \celloIFirstMov
         >>
-        \new Staff = "celloII" <<
-          \set Staff.midiInstrument = #"violin"
-          \set Staff.instrumentName = "Violino II."
+        \new Staff = "cello2" <<
+          \set Staff.midiInstrument = #"cello"
+          \set Staff.instrumentName = \celloIIName
 
           \globalFirstMov
           \celloIIFirstMov
         >>
         \new Staff = "cello3" <<
-          \set Staff.midiInstrument = #"cello3"
-          \set Staff.instrumentName = "Viola."
+          \set Staff.midiInstrument = #"cello"
+          \set Staff.instrumentName = \celloIIIName
 
 
           \globalFirstMov
           \celloIIIFirstMov
         >>
-        \new Staff = "cello" <<
+        \new Staff = "cello4" <<
           \set Staff.midiInstrument = #"cello"
-          \set Staff.instrumentName = "Violoncello."
+          \set Staff.instrumentName = \celloIVName
 
           \globalFirstMov
           \celloIVFirstMov

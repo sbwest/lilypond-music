@@ -15,7 +15,7 @@
   \context {
     \Score
     \override DynamicTextSpanner.style = #'none
-    \override TupletBracket.bracket-visibility = ##f
+    % \override TupletBracket.bracket-visibility = ##f
     % \override BarNumber.font-size = #1
     % \override BarNumber.padding = #3
   }

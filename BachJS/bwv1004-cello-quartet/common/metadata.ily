@@ -89,4 +89,8 @@ dolce = \markup { \italic "dolce" }
 
 simile = \markup { \italic "simile" }
 
+arpeggiotext = \markup { \italic "arpeggio" }
+
 sempreSottoVoce = \markup { \italic "sempre sotto voce" }
+
+rit = \markup { \italic "rit." }
